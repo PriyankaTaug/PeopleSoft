@@ -1,13 +1,20 @@
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+import { Building, Mountain, Home, Car } from 'lucide-react';
 
 export default function Page() {
-  const companyImages = PlaceHolderImages.filter((img) =>
-    ['company-1', 'company-2', 'company-3', 'company-4'].includes(img.id)
-  );
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
+  const companies = [
+    {
+      name: 'Home Kerala',
+      icon: <Home className="w-8 h-8 text-cyan-600" />,
+    },
+    {
+      name: 'Real Estate',
+      icon: <Building className="w-8 h-8 text-cyan-600" />,
+    },
+    { name: 'Rentals', icon: <Car className="w-8 h-8 text-cyan-600" /> },
+    { name: 'Land', icon: <Mountain className="w-8 h-8 text-cyan-600" /> },
+  ];
 
   return (
     <div className="bg-white text-[#0d1a1a]">
@@ -32,62 +39,39 @@ export default function Page() {
       </header>
 
       <main className="px-8 md:px-16 lg:px-24 py-8">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="flex flex-col justify-center">
-            <p className="text-sm font-bold text-[#0d1a1a] tracking-widest mb-2">
-              TRY IT NOW!
-            </p>
-            <h2 className="text-5xl md:text-6xl font-serif">Change the way</h2>
-            <h2 className="text-5xl md:text-6xl font-serif mb-4">
-              you use your{' '}
-              <span className="font-['Playfair_Display',_serif]">money</span>
-            </h2>
+        <div className="text-center mb-16">
+          <p className="text-sm font-bold text-[#0d1a1a] tracking-widest mb-2">
+            TRY IT NOW!
+          </p>
+          <h2 className="text-5xl md:text-6xl font-serif">Change the way</h2>
+          <h2 className="text-5xl md:text-6xl font-serif mb-4">
+            you use your{' '}
+            <span className="font-['Playfair_Display',_serif]">money</span>
+          </h2>
 
-            <p className="max-w-md text-gray-600 mb-8">
-              From your everyday spending, to planning for your future with
-              savings and investments, People Soft helps you get more from your
-              money.
-            </p>
-            <div className="flex items-center gap-4">
-              <Button className="rounded-full px-6 py-3">
-                Get Started Now
-              </Button>
-            </div>
-          </div>
-          <div>
-            {heroImage && (
-              <Card className="overflow-hidden rounded-lg">
-                <div className="relative aspect-video w-full">
-                  <Image
-                    src={heroImage.imageUrl}
-                    alt={heroImage.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={heroImage.imageHint}
-                  />
-                </div>
-              </Card>
-            )}
+          <p className="max-w-md mx-auto text-gray-600 mb-8">
+            From your everyday spending, to planning for your future with
+            savings and investments, People Soft helps you get more from your
+            money.
+          </p>
+          <div className="flex items-center justify-center gap-4">
+            <Button className="rounded-full px-6 py-3">
+              Get Started Now
+            </Button>
           </div>
         </div>
 
         <div className="text-center py-16">
           <h3 className="text-3xl font-bold mb-8">Our Companies</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {companyImages.map((image) => (
-              <div key={image.id}>
+            {companies.map((company) => (
+              <div key={company.name}>
                 <Card className="overflow-hidden rounded-lg">
-                  <div className="relative aspect-square w-full">
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.description}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                  </div>
+                  <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
+                    {company.icon}
+                    <p className="font-bold text-lg">{company.name}</p>
+                  </CardContent>
                 </Card>
-                <p className="font-bold text-lg mt-4">{image.description}</p>
               </div>
             ))}
           </div>
