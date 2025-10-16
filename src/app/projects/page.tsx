@@ -67,11 +67,10 @@ export default function ProjectsPage() {
           {/* Property Cards */}
           <div className="absolute bottom-24 left-1/2 -translate-x-1/2 w-full px-8">
             <div className="flex items-end justify-center gap-4">
-              <NewPropertyCard property={properties[0]} color="yellow" />
-              <NewPropertyCard property={properties[1]} color="white" />
-              <NewPropertyCard property={properties[2]} color="purple" />
-              <NewPropertyCard property={properties[3]} color="white" />
-               <NewPropertyCard property={properties[4]} color="white" />
+              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Buy')!, title: 'Buy' }} color="yellow" />
+              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Rent')!, title: 'Rent' }} color="white" />
+              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Plot')!, title: 'Plot' }} color="purple" />
+              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Commercial')!, title: 'Commercial' }} color="white" />
             </div>
           </div>
           
