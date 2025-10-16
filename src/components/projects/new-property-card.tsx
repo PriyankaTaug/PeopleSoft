@@ -2,7 +2,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import type { Property } from '@/app/projects/data';
 import { cn } from '@/lib/utils';
-import { Building, Home, Land, Warehouse } from 'lucide-react';
+import { Building, Home, LandPlot, Warehouse } from 'lucide-react';
 
 type PropertyCardProps = {
   property: Property;
@@ -13,7 +13,7 @@ type PropertyCardProps = {
 const categoryIcons = {
   'Buy': Home,
   'Rent': Building,
-  'Plot': Land,
+  'Plot': LandPlot,
   'Commercial': Warehouse,
 }
 

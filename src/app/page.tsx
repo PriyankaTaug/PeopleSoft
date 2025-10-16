@@ -8,11 +8,11 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-background">
       <section className="relative h-[60vh] w-full text-white">
         <Image
-          src="https://picsum.photos/seed/123/1920/1080"
-          alt="Modern building architecture"
+          src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop"
+          alt="Modern house"
           fill
           className="object-cover"
-          data-ai-hint="modern architecture"
+          data-ai-hint="modern house"
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -31,30 +31,42 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="w-full max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="mb-12 text-center font-headline text-3xl font-bold text-primary">Our Ventures</h2>
-        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
-          <HomeCard
-            title="Homecare Kerala"
-            description="Visit our trusted home care service partner."
-            href="https://homecarekerala.com/"
-            isExternal
-          />
-          <HomeCard
-            title="Real Estate Projects"
-            description="Explore properties to buy, rent, or invest in."
-            href="/projects"
-          />
-          <HomeCard
-            title="Recruitment"
-            description="We’re building a smarter hiring platform."
-            isComingSoon
-          />
-          <HomeCard
-            title="IT Consultancies"
-            description="Tech-driven solutions launching soon."
-            isComingSoon
-          />
+      <section id="services" className="w-full max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
+          <div className="flex flex-col justify-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
+              Our Ventures
+            </p>
+            <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+              Expanding Our Horizons
+            </h2>
+            <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+              From real estate to innovative tech solutions, we are constantly exploring new avenues to bring value and excellence.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <HomeCard
+              title="Homecare Kerala"
+              description="Visit our trusted home care service partner."
+              href="https://homecarekerala.com/"
+              isExternal
+            />
+            <HomeCard
+              title="Real Estate Projects"
+              description="Explore properties to buy, rent, or invest in."
+              href="/projects"
+            />
+            <HomeCard
+              title="Recruitment"
+              description="We’re building a smarter hiring platform."
+              isComingSoon
+            />
+            <HomeCard
+              title="IT Consultancies"
+              description="Tech-driven solutions launching soon."
+              isComingSoon
+            />
+          </div>
         </div>
       </section>
     </main>
