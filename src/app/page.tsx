@@ -6,11 +6,6 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="bg-white text-[#0d1a1a]">
-      <div className="bg-[#0d1a1a] text-white text-center p-2 text-sm">
-        <span>Session 2024 Early-bird registration now open</span>
-        <ArrowRight className="inline h-4 w-4 ml-2" />
-      </div>
-
       <header className="py-4 px-8 flex justify-between items-center">
         <div className="flex items-center gap-10">
           <h1 className="text-2xl font-bold">Ascone</h1>
@@ -20,12 +15,6 @@ export default function Home() {
             <a href="#" className="hover:text-gray-700">Company</a>
             <a href="#" className="hover:text-gray-700">Insight</a>
           </nav>
-        </div>
-        <div className="flex items-center gap-4">
-          <Button variant="ghost">Login</Button>
-          <Button className="bg-[#0d1a1a] text-white rounded-full">
-            Sign Up <ArrowRight className="ml-2" />
-          </Button>
         </div>
       </header>
 
