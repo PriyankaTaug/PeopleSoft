@@ -47,19 +47,17 @@ export default function ProjectsPage() {
             </div>
           </header>
 
-          <main className="flex-1 pt-16">
+          <main className="flex flex-1 flex-col items-center justify-center text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-7xl font-bold leading-tight">
-                Porto
-                <br />
-                Santo Stefano
+                People Soft
               </h1>
               <div className="mt-4 max-w-sm text-white/90">
-                <p>Via della Grotta, 54-23, 58019 Porto Santo Stefano GR General Construction - Stefano Construct Company</p>
+                <p>"The key to your new home is just a click away. Discover your future."</p>
               </div>
             </motion.div>
           </main>
