@@ -46,7 +46,7 @@ export default function Page() {
             savings and investments, People Soft helps you get more from your money.
           </p>
           <div className="flex items-center gap-4">
-            <Button className="bg-[#0d1a1a] text-white rounded-full px-6 py-3">
+            <Button className="rounded-full px-6 py-3">
               Get Started Now
             </Button>
           </div>
