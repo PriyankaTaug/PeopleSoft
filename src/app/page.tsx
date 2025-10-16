@@ -60,12 +60,21 @@ export default function Page() {
             <Building className="w-12 h-12 mb-2 text-gray-600" />
             <p className="font-bold text-lg">Real estate</p>
           </Card>
-          <Card className="col-span-2 bg-[#EAF0EF] p-6 flex flex-col justify-center items-center rounded-2xl text-center">
+          <Card className="col-span-1 bg-[#EAF0EF] p-6 flex flex-col justify-center items-center rounded-2xl text-center">
             <Warehouse className="w-12 h-12 mb-2 text-gray-600" />
             <p className="font-bold text-lg">Rentals</p>
           </Card>
+           <Card className="col-span-1 bg-[#F3F3F3] p-6 flex flex-col justify-center items-center rounded-2xl text-center">
+            <LandPlot className="w-12 h-12 mb-2 text-gray-600" />
+            <p className="font-bold text-lg">Land</p>
+          </Card>
         </div>
       </main>
+      <footer className="bg-white py-8">
+        <div className="container mx-auto text-center">
+          <h2 className="text-2xl font-bold">People Soft</h2>
+        </div>
+      </footer>
     </div>
   );
 }
