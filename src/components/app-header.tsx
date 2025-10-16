@@ -6,7 +6,7 @@ export function AppHeader() {
   return (
     <header className="w-full border-b bg-background/95 backdrop-blur-sm sticky top-0 z-20">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="text-xl font-bold tracking-tight text-primary font-headline">
+        <Link href="/" className="text-xl font-bold tracking-tight text-primary-foreground font-headline">
           AquaEstate
         </Link>
         <Button variant="ghost" size="icon" asChild>
