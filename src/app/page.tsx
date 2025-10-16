@@ -18,7 +18,7 @@ export default function Page() {
 
   return (
     <div className="bg-white text-[#0d1a1a]">
-      <header className="py-4 px-8 flex justify-between items-center">
+      <header className="py-4 px-8 md:px-16 lg:px-24 flex justify-between items-center">
         <div className="flex items-center gap-10">
           <h1 className="text-2xl font-bold">People Soft</h1>
           <nav className="hidden md:flex gap-6 text-sm">
