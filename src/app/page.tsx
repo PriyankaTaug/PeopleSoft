@@ -52,19 +52,19 @@ export default function Page() {
           </div>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
-          <Card className="col-span-1 row-span-1 bg-[#F3F3F3] p-6 flex flex-col justify-center items-center rounded-2xl text-center">
+          <Card className="col-span-1 row-span-1 bg-[#F3F3F3] p-6 flex flex-col justify-center items-center rounded-2xl text-center aspect-square">
             <HomeIcon className="w-12 h-12 mb-2 text-gray-600" />
             <p className="font-bold text-lg">Home kerala</p>
           </Card>
-          <Card className="col-span-1 row-span-1 bg-[#F0EFEA] p-6 flex flex-col justify-center items-center rounded-2xl text-center">
+          <Card className="col-span-1 row-span-1 bg-[#F0EFEA] p-6 flex flex-col justify-center items-center rounded-2xl text-center aspect-square">
             <Building className="w-12 h-12 mb-2 text-gray-600" />
             <p className="font-bold text-lg">Real estate</p>
           </Card>
-          <Card className="col-span-1 row-span-1 bg-[#EAF0EF] p-6 flex flex-col justify-center items-center rounded-2xl text-center">
+          <Card className="col-span-1 row-span-1 bg-[#EAF0EF] p-6 flex flex-col justify-center items-center rounded-2xl text-center aspect-square">
             <Warehouse className="w-12 h-12 mb-2 text-gray-600" />
             <p className="font-bold text-lg">Rentals</p>
           </Card>
-          <Card className="col-span-1 row-span-1 bg-[#0d1a1a] text-white p-6 flex flex-col justify-center items-center rounded-2xl text-center">
+          <Card className="col-span-1 row-span-1 bg-[#0d1a1a] text-white p-6 flex flex-col justify-center items-center rounded-2xl text-center aspect-square">
             <LandPlot className="w-12 h-12 mb-2" />
             <p className="font-bold text-lg">Land</p>
           </Card>
