@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "Modern apartment building exterior",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "modern apartment"
+    },
+    {
+      "id": "project-2",
+      "description": "Suburban house with a garden",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "suburban house"
+    },
+    {
+      "id": "project-3",
+      "description": "Empty plot of land for sale",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "land plot"
+    },
+    {
+      "id": "project-4",
+      "description": "Commercial building in a city",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "commercial building"
+    },
+    {
+      "id": "project-5",
+      "description": "Luxury villa with a swimming pool",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageHint": "luxury villa"
+    },
+    {
+      "id": "project-6",
+      "description": "Apartment for rent in a high-rise",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageHint": "apartment highrise"
+    },
+    {
+      "id": "project-7",
+      "description": "Large undeveloped plot of land",
+      "imageUrl": "https://picsum.photos/seed/107/600/400",
+      "imageHint": "land plot"
+    },
+    {
+      "id": "project-8",
+      "description": "Office space for lease",
+      "imageUrl": "https://picsum.photos/seed/108/600/400",
+      "imageHint": "office space"
+    }
+  ]
 }
