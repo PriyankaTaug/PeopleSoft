@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Building, Mountain, Home, Car } from 'lucide-react';
+import { Building, Home, Users, Laptop } from 'lucide-react';
 
 export default function Page() {
   const companies = [
@@ -12,8 +12,11 @@ export default function Page() {
       name: 'Real Estate',
       icon: <Building className="w-8 h-8 text-cyan-600" />,
     },
-    { name: 'Rentals', icon: <Car className="w-8 h-8 text-cyan-600" /> },
-    { name: 'Land', icon: <Mountain className="w-8 h-8 text-cyan-600" /> },
+    { name: 'Recruitment', icon: <Users className="w-8 h-8 text-cyan-600" /> },
+    {
+      name: 'IT Consultancy',
+      icon: <Laptop className="w-8 h-8 text-cyan-600" />,
+    },
   ];
 
   return (
