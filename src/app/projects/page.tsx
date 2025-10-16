@@ -1,13 +1,20 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { AppHeader } from '@/components/app-header';
-import { FilterBar } from '@/components/projects/filter-bar';
 import { PropertyCard } from '@/components/projects/property-card';
 import { properties, type PropertyCategory } from './data';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Input } from '@/components/ui/input';
-import { Search } from 'lucide-react';
+import { CategoryCard } from '@/components/projects/category-card';
+import { Building, Home, LandPlot, Warehouse } from 'lucide-react';
+
+const categories: { name: PropertyCategory; icon: React.ElementType }[] = [
+  { name: 'Buy', icon: Home },
+  { name: 'Rent', icon: Building },
+  { name: 'Plot', icon: LandPlot },
+  { name: 'Commercial', icon: Warehouse },
+];
 
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState<PropertyCategory>('Buy');
@@ -24,30 +31,33 @@ export default function ProjectsPage() {
     <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-900">
       <AppHeader />
 
-      <section className="bg-background py-12 shadow-sm">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
-              Find Your Dream Property
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Explore our curated list of properties across Kerala.
-            </p>
-            <div className="relative mt-8">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-              <Input
-                type="search"
-                placeholder="Search by name or location..."
-                className="w-full rounded-full bg-background p-6 pl-12 text-lg"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+      <section className="relative h-[60vh] w-full text-white">
+        <Image
+          src="https://picsum.photos/seed/456/1920/1080"
+          alt="Modern real estate"
+          fill
+          className="object-cover"
+          data-ai-hint="modern real estate"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-8 text-center">
+          <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
+            People soft
+          </h1>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 md:gap-6">
+            {categories.map((category) => (
+              <CategoryCard
+                key={category.name}
+                category={category.name}
+                icon={category.icon}
+                isActive={activeFilter === category.name}
+                onClick={() => setActiveFilter(category.name)}
               />
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      
-      <FilterBar activeFilter={activeFilter} onFilterChange={setActiveFilter} />
 
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
