@@ -7,6 +7,12 @@ import { NewPropertyCard } from '@/components/projects/new-property-card';
 
 export default function ProjectsPage() {
 
+  const stats = [
+    { value: '115k+', label: 'Capital Raised' },
+    { value: '70k+', label: 'Happy Customers' },
+    { value: '47K+', label: 'Property Options' },
+  ];
+
   return (
     <div className="flex min-h-screen w-full flex-col bg-[#E9E5DE]">
       <div className="relative h-screen w-full overflow-hidden">
@@ -45,6 +51,22 @@ export default function ProjectsPage() {
                 <NewPropertyCard property={{ ...properties.find(p => p.category === 'Commercial')!, title: 'Commercial' }} color="white" className="h-28" />
               </div>
             </div>
+
+            {/* Stats Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mt-16 flex items-center justify-center space-x-8 md:space-x-16"
+            >
+              {stats.map((stat, index) => (
+                <div key={index} className="text-center text-white">
+                  <p className="text-4xl font-bold">{stat.value}</p>
+                  <p className="text-sm text-white/80">{stat.label}</p>
+                </div>
+              ))}
+            </motion.div>
+
           </main>
           
         </div>
