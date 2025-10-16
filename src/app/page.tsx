@@ -38,7 +38,7 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="px-8 md:px-16 lg:px-24">
+      <main className="px-8 md:px-16 lg:px-24 pt-16">
         <div className="text-center">
           <p className="text-sm font-bold text-[#0d1a1a] tracking-widest mb-2">
             TRY IT NOW!
