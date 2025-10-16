@@ -1,10 +1,9 @@
 "use client";
 
 import Image from 'next/image';
-import { AppHeader } from '@/components/app-header';
-import { properties, type PropertyCategory } from './data';
-import { AnimatePresence, motion } from 'framer-motion';
-import { Building, Briefcase, ChevronRight, CircleUserRound, Files, FolderKanban, Home, HomeIcon, LandPlot, PanelLeft, RefreshCw, Warehouse } from 'lucide-react';
+import { properties } from './data';
+import { motion } from 'framer-motion';
+import { Briefcase, CircleUserRound, HomeIcon, PanelLeft, RefreshCw } from 'lucide-react';
 import { NewPropertyCard } from '@/components/projects/new-property-card';
 import { Button } from '@/components/ui/button';
 
@@ -12,7 +11,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-[#E9E5DE]">
-      <div className="relative h-screen w-full overflow-hidden rounded-3xl">
+      <div className="relative h-screen w-full overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1587212586638-859557433363?q=80&w=2070&auto=format&fit=crop"
           alt="Woman relaxing in a modern living room"
@@ -24,28 +23,6 @@ export default function ProjectsPage() {
         <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 flex h-full flex-col p-8 text-white">
-          <header className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" className="bg-white/10 backdrop-blur-sm rounded-full text-white hover:bg-white/20 hover:text-white">
-                <RefreshCw className="rotate-90" />
-              </Button>
-              <span className="font-semibold">Restroom</span>
-            </div>
-            <div className="flex items-center gap-6">
-              <Button variant="ghost" size="sm" className="gap-2 text-white hover:bg-white/10 hover:text-white">
-                <FolderKanban /> Organizations
-              </Button>
-              <Button variant="ghost" size="sm" className="gap-2 text-white hover:bg-white/10 hover:text-white">
-                <Files /> Reports
-              </Button>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="font-semibold">Bedroom</span>
-              <Button variant="ghost" size="icon" className="bg-white/10 backdrop-blur-sm rounded-full text-white hover:bg-white/20 hover:text-white">
-                <RefreshCw className="-rotate-90" />
-              </Button>
-            </div>
-          </header>
 
           <main className="flex flex-1 flex-col items-center justify-center text-center">
             <motion.div
@@ -60,17 +37,17 @@ export default function ProjectsPage() {
                 <p>"The key to your new home is just a click away. Discover your future."</p>
               </div>
             </motion.div>
-          </main>
 
-          {/* Property Cards */}
-          <div className="absolute bottom-24 left-1/2 -translate-x-1/2 w-full px-8">
-            <div className="flex items-end justify-center gap-4">
-              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Buy')!, title: 'Buy' }} color="yellow" className="h-28" />
-              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Rent')!, title: 'Rent' }} color="white" className="h-28" />
-              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Plot')!, title: 'Plot' }} color="purple" className="h-28" />
-              <NewPropertyCard property={{ ...properties.find(p => p.category === 'Commercial')!, title: 'Commercial' }} color="white" className="h-28" />
+            {/* Property Cards */}
+            <div className="mt-12 w-full">
+              <div className="flex items-end justify-center gap-4">
+                <NewPropertyCard property={{ ...properties.find(p => p.category === 'Buy')!, title: 'Buy' }} color="yellow" className="h-28" />
+                <NewPropertyCard property={{ ...properties.find(p => p.category === 'Rent')!, title: 'Rent' }} color="white" className="h-28" />
+                <NewPropertyCard property={{ ...properties.find(p => p.category === 'Plot')!, title: 'Plot' }} color="purple" className="h-28" />
+                <NewPropertyCard property={{ ...properties.find(p => p.category === 'Commercial')!, title: 'Commercial' }} color="white" className="h-28" />
+              </div>
             </div>
-          </div>
+          </main>
           
           <footer className="absolute bottom-0 left-0 right-0 p-4">
              <div className="mx-auto max-w-md rounded-full bg-zinc-800/80 px-6 py-3 text-white backdrop-blur-md">
