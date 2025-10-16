@@ -70,11 +70,6 @@ export default function Page() {
           </Card>
         </div>
       </main>
-      <footer className="bg-white py-8">
-        <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-bold">People Soft</h2>
-        </div>
-      </footer>
     </div>
   );
 }
