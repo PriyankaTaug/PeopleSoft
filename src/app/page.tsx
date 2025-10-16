@@ -70,6 +70,13 @@ export default function Page() {
           </Card>
         </div>
       </main>
+      <footer className="bg-white py-8">
+        <div className="container mx-auto flex justify-center items-center">
+          <div className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center text-lg font-bold">
+            N
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
