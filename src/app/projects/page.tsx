@@ -3,9 +3,7 @@
 import Image from 'next/image';
 import { properties } from './data';
 import { motion } from 'framer-motion';
-import { Briefcase, CircleUserRound, HomeIcon, PanelLeft, RefreshCw } from 'lucide-react';
 import { NewPropertyCard } from '@/components/projects/new-property-card';
-import { Button } from '@/components/ui/button';
 
 export default function ProjectsPage() {
 
@@ -49,17 +47,6 @@ export default function ProjectsPage() {
             </div>
           </main>
           
-          <footer className="absolute bottom-0 left-0 right-0 p-4">
-             <div className="mx-auto max-w-md rounded-full bg-zinc-800/80 px-6 py-3 text-white backdrop-blur-md">
-                 <div className="flex items-center justify-between">
-                     <Button variant="ghost" size="icon" className="rounded-full hover:bg-white/20"><HomeIcon /></Button>
-                     <Button variant="ghost" size="icon" className="rounded-full hover:bg-white/20"><Briefcase /></Button>
-                     <Button variant="ghost" size="icon" className="rounded-full bg-white text-zinc-800 hover:bg-gray-200"><PanelLeft /></Button>
-                     <Button variant="ghost" size="icon" className="rounded-full hover:bg-white/20"><RefreshCw /></Button>
-                     <Button variant="ghost" size="icon" className="rounded-full hover:bg-white/20"><CircleUserRound /></Button>
-                 </div>
-             </div>
-          </footer>
         </div>
       </div>
     </div>
