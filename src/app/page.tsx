@@ -1,5 +1,4 @@
 
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Building, Mountain, Home, Car } from 'lucide-react';
 
@@ -40,7 +39,7 @@ export default function Page() {
       </header>
 
       <main className="px-8 md:px-16 lg:px-24">
-        <div className="text-center mb-16">
+        <div className="text-center">
           <p className="text-sm font-bold text-[#0d1a1a] tracking-widest mb-2">
             TRY IT NOW!
           </p>
@@ -57,7 +56,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center">
           <h3 className="text-3xl font-bold mb-8">Our Companies</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {companies.map((company) => (
