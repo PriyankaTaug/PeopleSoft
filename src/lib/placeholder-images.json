@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "hero",
+      "description": "Hero image",
+      "imageUrl": "https://picsum.photos/seed/hero/600/400",
+      "imageHint": "modern interior"
+    },
+    {
       "id": "company-1",
       "description": "Home Kerala",
       "imageUrl": "https://picsum.photos/seed/201/400/400",

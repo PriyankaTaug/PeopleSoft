@@ -7,6 +7,7 @@ export default function Page() {
   const companyImages = PlaceHolderImages.filter((img) =>
     ['company-1', 'company-2', 'company-3', 'company-4'].includes(img.id)
   );
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
   return (
     <div className="bg-white text-[#0d1a1a]">
@@ -31,7 +32,7 @@ export default function Page() {
       </header>
 
       <main className="px-8 md:px-16 lg:px-24 py-8">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col justify-center">
             <p className="text-sm font-bold text-[#0d1a1a] tracking-widest mb-2">
               TRY IT NOW!
@@ -53,7 +54,21 @@ export default function Page() {
               </Button>
             </div>
           </div>
-          <div></div>
+          <div>
+            {heroImage && (
+              <Card className="overflow-hidden rounded-lg">
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={heroImage.imageUrl}
+                    alt={heroImage.description}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={heroImage.imageHint}
+                  />
+                </div>
+              </Card>
+            )}
+          </div>
         </div>
 
         <div className="text-center py-16">
