@@ -31,7 +31,7 @@ export default function ProjectsPage() {
               <h1 className="text-8xl font-bold leading-tight text-white">
                 People Soft solutions
               </h1>
-              <div className="mt-4 max-w-sm text-white/90">
+              <div className="mt-4 max-w-sm text-white/90 mx-auto">
                 <p>"The key to your new home is just a click away. Discover your future."</p>
               </div>
             </motion.div>
