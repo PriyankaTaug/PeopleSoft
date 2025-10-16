@@ -3,12 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { PropertyCategory } from "@/app/projects/data";
-import { Building, Home, Land, Warehouse } from "lucide-react";
+import { Building, Home, LandPlot, Warehouse } from "lucide-react";
 
 const filters: { name: PropertyCategory, icon: React.ElementType }[] = [
     { name: 'Buy', icon: Home },
     { name: 'Rent', icon: Building },
-    { name: 'Plot', icon: Land },
+    { name: 'Plot', icon: LandPlot },
     { name: 'Commercial', icon: Warehouse },
 ];
 
