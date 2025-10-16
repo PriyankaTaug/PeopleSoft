@@ -66,12 +66,6 @@ export default function Page() {
           </Card>
         </div>
       </main>
-
-      <section className="bg-white py-20">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold">People Soft</h2>
-        </div>
-      </section>
     </div>
   );
 }
