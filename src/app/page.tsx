@@ -65,6 +65,16 @@ export default function Page() {
 
         <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 md:p-16 mt-16 flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2">
+            <h3 className="text-3xl font-bold mb-4">
+              Automate responses, resolve tickets instantly, and deliver
+              personalized support to delight your customers 24/7
+            </h3>
+            <div className="flex gap-2">
+              <Input type="email" placeholder="Enter your email" />
+              <Button>Get Started</Button>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {companies.map((company) => (
                 <div key={company.name}>
@@ -76,16 +86,6 @@ export default function Page() {
                   </Card>
                 </div>
               ))}
-            </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            <h3 className="text-3xl font-bold mb-4">
-              Automate responses, resolve tickets instantly, and deliver
-              personalized support to delight your customers 24/7
-            </h3>
-            <div className="flex gap-2">
-              <Input type="email" placeholder="Enter your email" />
-              <Button>Get Started</Button>
             </div>
           </div>
         </div>
