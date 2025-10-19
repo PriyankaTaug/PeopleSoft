@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Building, Home, Users, Laptop, ClipboardCheck } from 'lucide-react';
+import { Building, Home, Laptop, ClipboardCheck } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
@@ -63,35 +63,24 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 md:p-16 mt-16 flex flex-col md:flex-row items-center gap-8">
-          <div className="w-full md:w-1/2">
-            <h3 className="text-3xl font-bold mb-4">
-              Automate responses, resolve tickets instantly, and deliver
-              personalized support to delight your customers 24/7
-            </h3>
-            <div className="flex gap-2">
-              <Input type="email" placeholder="Enter your email" />
-              <Button>Get Started</Button>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {companies.map((company) => (
-                <div key={company.name}>
-                  <Card className="overflow-hidden rounded-lg">
-                    <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
-                      {company.icon}
-                      <p className="font-bold text-lg">{company.name}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
+        <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 md:p-16 mt-16 flex items-center justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {companies.map((company) => (
+              <div key={company.name} className="w-64 h-40">
+                <Card className="overflow-hidden rounded-lg w-full h-full">
+                  <CardContent className="flex flex-col items-center justify-center p-6 gap-4 h-full">
+                    {company.icon}
+                    <p className="font-bold text-lg text-center">
+                      {company.name}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="text-center mt-16">
-        </div>
+        <div className="text-center mt-16"></div>
       </main>
     </div>
   );
