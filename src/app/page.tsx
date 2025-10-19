@@ -1,8 +1,12 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Building, Home, Users, Laptop, ClipboardCheck } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
 
 export default function Page() {
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
   const companies = [
     {
       name: 'Real Estate',
@@ -62,9 +66,34 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="text-center">
+        <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 md:p-16 mt-16 flex flex-col md:flex-row items-center gap-8">
+          <div className="w-full md:w-1/2">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                width={600}
+                height={400}
+                className="rounded-lg object-cover"
+                data-ai-hint={heroImage.imageHint}
+              />
+            )}
+          </div>
+          <div className="w-full md:w-1/2">
+            <h3 className="text-3xl font-bold mb-4">
+              Automate responses, resolve tickets instantly, and deliver
+              personalized support to delight your customers 24/7
+            </h3>
+            <div className="flex gap-2">
+              <Input type="email" placeholder="Enter your email" />
+              <Button>Get Started</Button>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-16">
           <h3 className="text-3xl font-bold mb-8">Our Companies</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {companies.map((company) => (
               <div key={company.name}>
                 <Card className="overflow-hidden rounded-lg">
