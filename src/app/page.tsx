@@ -1,21 +1,24 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Building, Home, Users, Laptop } from 'lucide-react';
+import { Building, Home, Users, Laptop, ClipboardCheck } from 'lucide-react';
 
 export default function Page() {
   const companies = [
+    {
+      name: 'Real Estate',
+      icon: <Building className="w-8 h-8 text-cyan-600" />,
+    },
     {
       name: 'Home Kerala',
       icon: <Home className="w-8 h-8 text-cyan-600" />,
     },
     {
-      name: 'Real Estate',
-      icon: <Building className="w-8 h-8 text-cyan-600" />,
-    },
-    { name: 'Recruitment', icon: <Users className="w-8 h-8 text-cyan-600" /> },
-    {
-      name: 'IT Consultancy',
+      name: 'IT Solution',
       icon: <Laptop className="w-8 h-8 text-cyan-600" />,
+    },
+    {
+      name: 'Property Management',
+      icon: <ClipboardCheck className="w-8 h-8 text-cyan-600" />,
     },
   ];
 
