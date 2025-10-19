@@ -64,9 +64,7 @@ export default function Page() {
             </span>
           </h2>
           <p className="max-w-md mx-auto text-gray-600 mb-8">
-            From your everyday spending, to planning for your future with
-            savings and investments, People Soft helps you get more from your
-            money.
+            From everyday spending to future planning, People Soft helps you get more from your money.
           </p>
         </div>
 
