@@ -36,7 +36,7 @@ export default function Page() {
     <div className="bg-white text-[#0d1a1a]">
       <header className="py-4 px-8 md:px-16 lg:px-24 flex justify-between items-center">
         <div className="flex items-center gap-10">
-          <h1 className="text-2xl font-bold">People Soft</h1>
+          <h1 className="text-2xl font-bold text-accent-foreground">People Soft</h1>
           <nav className="hidden md:flex gap-6 text-sm">
             <a href="#" className="hover:text-gray-700">
               Features
@@ -64,7 +64,8 @@ export default function Page() {
             </span>
           </h2>
           <p className="max-w-md mx-auto text-gray-600 mb-8">
-            Get more from your money, from everyday spending to future planning.
+            From your everyday spending, to planning for your future with
+            savings and investments.
           </p>
         </div>
 
