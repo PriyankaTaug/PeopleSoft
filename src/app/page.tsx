@@ -83,7 +83,7 @@ export default function Page() {
                 We offer a variety of tools and resources to help you manage
                 your finances more effectively.
               </p>
-              <Button className="bg-yellow-300 text-black hover:bg-yellow-400 h-12 px-6 rounded-full font-bold flex items-center gap-2">
+              <Button className="h-12 px-6 rounded-full font-bold flex items-center gap-2">
                 Learn More
                 <span className="bg-black text-white rounded-full p-1">
                   <ArrowRight className="w-4 h-4" />
@@ -97,8 +97,8 @@ export default function Page() {
                   className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border-gray-200"
                 >
                   <CardContent className="flex flex-col items-start justify-center p-6 gap-4 h-40">
-                    <div className="bg-yellow-200/50 rounded-full p-3">
-                       {React.cloneElement(company.icon, { className: 'w-6 h-6 text-yellow-700' })}
+                    <div className="bg-blue-100/50 rounded-full p-3">
+                       {React.cloneElement(company.icon, { className: 'w-6 h-6 text-primary' })}
                     </div>
                     <p className="font-semibold text-lg text-gray-800">
                       {company.name}
