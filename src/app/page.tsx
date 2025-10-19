@@ -50,9 +50,6 @@ export default function Page() {
 
       <main className="px-8 md:px-16 lg:px-24 pt-16">
         <div className="text-center">
-          <p className="text-sm font-bold text-[#0d1a1a] tracking-widest mb-2">
-            TRY IT NOW!
-          </p>
           <h2 className="text-5xl md:text-6xl font-serif">Change the way</h2>
           <h2 className="text-5xl md:text-6xl font-serif mb-4">
             you use your{' '}
@@ -68,16 +65,18 @@ export default function Page() {
 
         <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 md:p-16 mt-16 flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                width={600}
-                height={400}
-                className="rounded-lg object-cover"
-                data-ai-hint={heroImage.imageHint}
-              />
-            )}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {companies.map((company) => (
+                <div key={company.name}>
+                  <Card className="overflow-hidden rounded-lg">
+                    <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
+                      {company.icon}
+                      <p className="font-bold text-lg">{company.name}</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-3xl font-bold mb-4">
@@ -92,19 +91,6 @@ export default function Page() {
         </div>
 
         <div className="text-center mt-16">
-          <h3 className="text-3xl font-bold mb-8">Our Companies</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {companies.map((company) => (
-              <div key={company.name}>
-                <Card className="overflow-hidden rounded-lg">
-                  <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
-                    {company.icon}
-                    <p className="font-bold text-lg">{company.name}</p>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </div>
         </div>
       </main>
     </div>
