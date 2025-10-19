@@ -64,7 +64,8 @@ export default function Page() {
             </span>
           </h2>
           <p className="max-w-md mx-auto text-gray-600 mb-8">
-            From everyday spending to future planning, People Soft helps you get more from your money.
+            From everyday spending to future planning, People Soft helps you
+            get more from your money.
           </p>
         </div>
 
@@ -108,13 +109,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
-        <div className="text-center mt-16">
-          <p className="text-lg text-gray-600">
-            Automate 50% of your inquiries with AI, let your teams focus on what
-            matters.
-          </p>
-        </div>
       </main>
     </div>
   );
