@@ -1,12 +1,18 @@
-import { Card, CardContent } from '@/components/ui/card';
-import { Building, Home, Laptop, ClipboardCheck } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
-import { Input } from '@/components/ui/input';
+import * as React from 'react';
+import {
+  Card,
+  CardContent,
+} from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import {
+  Building,
+  Home,
+  Laptop,
+  ClipboardCheck,
+  ArrowRight,
+} from 'lucide-react';
 
 export default function Page() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
   const companies = [
     {
       name: 'Real Estate',
@@ -48,7 +54,7 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="px-8 md:px-16 lg:px-24 pt-16">
+      <main className="px-8 md:px-16 lg:px-24 py-16">
         <div className="text-center">
           <h2 className="text-5xl md:text-6xl font-serif">Change the way</h2>
           <h2 className="text-5xl md:text-6xl font-serif mb-4">
@@ -57,29 +63,53 @@ export default function Page() {
               money
             </span>
           </h2>
-
           <p className="max-w-md mx-auto text-gray-600 mb-8">
-            From your everyday spending, to planning for your future, People
-            Soft helps you get more from your money.
+            From your everyday spending, to planning for your future with
+            savings and investments, People Soft helps you get more from your
+            money.
           </p>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 md:p-16 mt-16 flex items-center justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {companies.map((company) => (
-              <div key={company.name} className="w-64 h-40">
-                <Card className="overflow-hidden rounded-lg w-full h-full">
-                  <CardContent className="flex flex-col items-center justify-center p-6 gap-4 h-full">
-                    {company.icon}
-                    <p className="font-bold text-lg text-center">
+        <section className="mt-16 bg-[#f0f7f5] rounded-3xl p-8 md:p-16 relative overflow-hidden">
+          <div
+            className="absolute inset-0 bg-repeat bg-center opacity-20"
+            style={{ backgroundImage: 'url("/wavy-pattern.svg")' }}
+          ></div>
+          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <h3 className="text-4xl font-bold text-gray-800">
+                Browse our set of services and offerings
+              </h3>
+              <p className="text-gray-600">
+                We offer a variety of tools and resources to help you manage
+                your finances more effectively.
+              </p>
+              <Button className="bg-yellow-300 text-black hover:bg-yellow-400 h-12 px-6 rounded-full font-bold flex items-center gap-2">
+                Learn More
+                <span className="bg-black text-white rounded-full p-1">
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </Button>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {companies.map((company) => (
+                <Card
+                  key={company.name}
+                  className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border-gray-200"
+                >
+                  <CardContent className="flex flex-col items-start justify-center p-6 gap-4 h-40">
+                    <div className="bg-yellow-200/50 rounded-full p-3">
+                       {React.cloneElement(company.icon, { className: 'w-6 h-6 text-yellow-700' })}
+                    </div>
+                    <p className="font-semibold text-lg text-gray-800">
                       {company.name}
                     </p>
                   </CardContent>
                 </Card>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
 
         <div className="text-center mt-16">
           <p className="text-lg text-gray-600">
