@@ -10,19 +10,19 @@ export default function Page() {
   const companies = [
     {
       name: 'Real Estate',
-      icon: <Building className="w-8 h-8 text-cyan-600" />,
+      icon: <Building className="w-8 h-8 text-primary" />,
     },
     {
       name: 'Home Kerala',
-      icon: <Home className="w-8 h-8 text-cyan-600" />,
+      icon: <Home className="w-8 h-8 text-primary" />,
     },
     {
       name: 'IT Solution',
-      icon: <Laptop className="w-8 h-8 text-cyan-600" />,
+      icon: <Laptop className="w-8 h-8 text-primary" />,
     },
     {
       name: 'Property Management',
-      icon: <ClipboardCheck className="w-8 h-8 text-cyan-600" />,
+      icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
     },
   ];
 
@@ -53,7 +53,9 @@ export default function Page() {
           <h2 className="text-5xl md:text-6xl font-serif">Change the way</h2>
           <h2 className="text-5xl md:text-6xl font-serif mb-4">
             you use your{' '}
-            <span className="font-['Playfair_Display',_serif]">money</span>
+            <span className="font-['Playfair_Display',_serif] text-primary">
+              money
+            </span>
           </h2>
 
           <p className="max-w-md mx-auto text-gray-600 mb-8">
