@@ -1,6 +1,7 @@
 import type {NextConfig} from 'next';
 
-const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+const isGitHubActions = true;
+
 // When deploying to GitHub Pages for a project site, assets live under /<repo>
 // Set NEXT_PUBLIC_BASE_PATH or rely on Actions env REPOSITORY to infer it.
 const inferredBasePath = (() => {
