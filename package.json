@@ -9,7 +9,7 @@
     "build": "cross-env NODE_ENV=production next build",
     "export": "yarn build",
     "serve": "npx --yes serve -s out",
-    "predeploy": "yarn export",
+    "predeploy": "cross-env NEXT_PUBLIC_BASE_PATH=/PeopleSoft yarn export",
     "deploy": "gh-pages -d out -b gh-pages",
     "start": "next start",
     "lint": "next lint",
