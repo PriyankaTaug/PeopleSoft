@@ -25,6 +25,7 @@ import {
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Page() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
   const [isEnquiryOpen, setIsEnquiryOpen] = React.useState(false);
   const [formData, setFormData] = React.useState({
     name: '',
@@ -115,7 +116,7 @@ export default function Page() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-blue-500/5" />
               <div
                 className="absolute inset-0 opacity-10"
-                style={{ backgroundImage: 'url("/wavy-pattern.svg")' }}
+                style={{ backgroundImage: `url("${basePath}/wavy-pattern.svg")` }}
               ></div>
             </div>
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
