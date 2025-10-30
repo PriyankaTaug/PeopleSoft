@@ -30,13 +30,13 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build static site (Next export)
+      - name: Build static site (output: export)
         env:
           GITHUB_ACTIONS: 'true'
           GITHUB_REPOSITORY: ${{ github.repository }}
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: |
-          yarn export
+          yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

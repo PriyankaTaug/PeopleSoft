@@ -224,7 +224,7 @@ export default function Page() {
                     {company.image ? (
                       <>
                         <Image
-                          src={company.image}
+                          src={`${basePath}${company.image}`}
                           alt={company.name}
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
