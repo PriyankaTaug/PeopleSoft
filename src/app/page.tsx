@@ -39,19 +39,22 @@ export default function Page() {
     {
       name: 'Real Estate',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/realestate.jpeg',
+      image: '/images/keralahomz.png',
     },
     {
       name: 'Home Kerala',
       icon: <Home className="w-8 h-8 text-primary" />,
+      image:'/images/keralahomz.png',
     },
     {
       name: 'IT Solution',
       icon: <Laptop className="w-8 h-8 text-primary" />,
+      image:'/images/itsolution.png'
     },
     {
       name: 'Property Management',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+      image:'/images/pm.png'
     },
   ];
 
@@ -79,6 +82,7 @@ export default function Page() {
             alt={heroImage.description}
             data-ai-hint={heroImage.imageHint}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -217,7 +221,7 @@ export default function Page() {
                     key={company.name}
                     className={`${
                       company.image 
-                        ? 'relative overflow-hidden group h-48' 
+                        ? 'relative overflow-hidden group h-40' 
                         : 'bg-white/90 backdrop-blur-md rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer'
                     }`}
                   >
@@ -227,7 +231,8 @@ export default function Page() {
                           src={company.image}
                           alt={company.name}
                           fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          sizes="(min-width: 640px) 50vw, 100vw"
+                          className="object-contain p-4 bg-white transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -237,7 +242,7 @@ export default function Page() {
                         </div>
                       </>
                     ) : (
-                      <CardContent className="flex flex-col items-start justify-center p-8 gap-5 h-48 group">
+                      <CardContent className="flex flex-col items-start justify-center p-8 gap-5 h-40 group">
                         <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
                           {React.cloneElement(company.icon, {
                             className: 'w-8 h-8 text-primary',
