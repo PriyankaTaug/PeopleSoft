@@ -44,7 +44,7 @@ export default function Page() {
     {
       name: 'Home Kerala',
       icon: <Home className="w-8 h-8 text-primary" />,
-      image:'/images/keralahomz.png',
+      image:'/images/home.png',
     },
     {
       name: 'IT Solution',
