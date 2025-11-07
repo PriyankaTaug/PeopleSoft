@@ -39,12 +39,12 @@ export default function Page() {
     {
       name: 'Real Estate',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/keralahomz.png',
+      image: '/images/kh.png',
     },
     {
       name: 'Home Kerala',
       icon: <Home className="w-8 h-8 text-primary" />,
-      image:'/images/home.png',
+      image:'/images/hk.jpg',
     },
     {
       name: 'IT Solution',
@@ -54,7 +54,12 @@ export default function Page() {
     {
       name: 'Property Management',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image:'/images/pm.png'
+      image:'/images/pmt.png'
+    },
+    {
+      name: 'Talent Connect',
+      icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+      image:'/images/talent.png'
     },
   ];
 
