@@ -40,8 +40,8 @@ export default function Page() {
     {
       name: 'Real Estate',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/kh.png',
-      width: 400,
+      image: '/images/keralahomz.png',
+      width: 110,
       height: 100,
     },
     {
