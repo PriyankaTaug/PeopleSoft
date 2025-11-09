@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
@@ -40,15 +41,15 @@ export default function Page() {
       name: 'Real Estate',
       icon: <Building className="w-8 h-8 text-primary" />,
       image: '/images/kh.png',
-      width: 280,
+      width: 400,
       height: 100,
     },
     {
       name: 'Home Kerala',
-      icon: <Home className="w-8 h-8 text-primary" />,
       image:'/images/hk.png',
       width: 120,
       height: 80,
+      url: 'https://homecarekerala.com/',
     },
     {
       name: 'IT Solution',
@@ -111,6 +112,24 @@ export default function Page() {
               People Soft
             </h1>
           </div>
+          <nav className="flex gap-4">
+            <Link href="/about">
+              <Button 
+                variant="ghost" 
+                className="text-gray-700 hover:text-primary font-semibold"
+              >
+                About Us
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button 
+                variant="ghost" 
+                className="text-gray-700 hover:text-primary font-semibold"
+              >
+                Contact Us
+              </Button>
+            </Link>
+          </nav>
         </header>
 
         <main className="px-8 md:px-16 lg:px-24 py-20">
@@ -231,9 +250,14 @@ export default function Page() {
                     key={company.name}
                     className={`${
                       company.image 
-                        ? 'relative overflow-hidden group h-40' 
+                        ? 'relative overflow-hidden group h-40 cursor-pointer' 
                         : 'bg-white/90 backdrop-blur-md rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer'
                     }`}
+                    onClick={() => {
+                      if (company.url) {
+                        window.open(company.url, '_blank');
+                      }
+                    }}
                   >
                     {company.image ? (
                       <>
@@ -255,11 +279,13 @@ export default function Page() {
                       </>
                     ) : (
                       <CardContent className="flex flex-col items-start justify-center p-8 gap-5 h-40 group">
-                        <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
-                          {React.cloneElement(company.icon, {
-                            className: 'w-8 h-8 text-primary',
-                          })}
-                        </div>
+                        {company.icon && (
+                          <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
+                            {React.cloneElement(company.icon, {
+                              className: 'w-8 h-8 text-primary',
+                            })}
+                          </div>
+                        )}
                         <p className="font-bold text-xl text-gray-900 group-hover:text-primary transition-colors duration-300">
                           {company.name}
                         </p>
