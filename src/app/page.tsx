@@ -139,7 +139,7 @@ export default function Page() {
             </h2>
             <h2 className="text-6xl md:text-7xl font-serif mb-6 leading-tight">
               <span className="bg-gradient-to-r from-primary via-blue-500 to-blue-600 bg-clip-text text-transparent">
-               Leading Tomorrow
+               Leading Tomorrow.
               </span>
             </h2>
           </div>
