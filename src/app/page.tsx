@@ -40,26 +40,36 @@ export default function Page() {
       name: 'Real Estate',
       icon: <Building className="w-8 h-8 text-primary" />,
       image: '/images/kh.png',
+      width: 280,
+      height: 100,
     },
     {
       name: 'Home Kerala',
       icon: <Home className="w-8 h-8 text-primary" />,
-      image:'/images/hk.jpg',
+      image:'/images/hk.png',
+      width: 120,
+      height: 80,
     },
     {
       name: 'IT Solution',
       icon: <Laptop className="w-8 h-8 text-primary" />,
-      image:'/images/itsolution.png'
+      image:'/images/itsolution.png',
+      width: 140,
+      height: 100,
     },
     {
       name: 'Property Management',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image:'/images/pmt.png'
+      image:'/images/pmt.png',
+      width: 180,
+      height: 100,
     },
     {
       name: 'Talent Connect',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image:'/images/talent.png'
+      image:'/images/talent.png',
+      width: 140,
+      height: 100,
     },
   ];
 
@@ -106,18 +116,13 @@ export default function Page() {
         <main className="px-8 md:px-16 lg:px-24 py-20">
           <div className="text-center mb-12">
             <h2 className="text-6xl md:text-7xl font-serif text-gray-900 font-bold mb-4 leading-tight">
-              Change the way
+             Consulting Today. 
             </h2>
             <h2 className="text-6xl md:text-7xl font-serif mb-6 leading-tight">
-              you use your{' '}
               <span className="bg-gradient-to-r from-primary via-blue-500 to-blue-600 bg-clip-text text-transparent">
-                money
+               Leading Tomorrow
               </span>
             </h2>
-            <p className="max-w-lg mx-auto text-lg text-gray-600 leading-relaxed">
-              From your everyday spending, to planning for your future with
-              savings and investments.
-            </p>
           </div>
 
           <section className="bg-gradient-to-br from-[#f8fafc] via-[#f0f7f5] to-[#e8f5f0] rounded-3xl p-10 md:p-20 relative overflow-hidden shadow-2xl border border-gray-100">
@@ -232,13 +237,15 @@ export default function Page() {
                   >
                     {company.image ? (
                       <>
-                        <Image
-                          src={company.image}
-                          alt={company.name}
-                          fill
-                          sizes="(min-width: 640px) 50vw, 100vw"
-                          className="object-contain p-4 bg-white transition-transform duration-300 group-hover:scale-105"
-                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-white">
+                          <Image
+                            src={company.image}
+                            alt={company.name}
+                            width={company.width}
+                            height={company.height}
+                            className="object-contain transition-transform duration-300 group-hover:scale-105"
+                          />
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <div className="absolute bottom-0 left-0 right-0 p-6">
                           <p className="font-bold text-2xl text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
