@@ -38,10 +38,17 @@ export default function Page() {
 
   const companies = [
     {
-      name: 'Real Estate',
+      name: 'Kerala Homz',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/kh.png',
-      width: 400,
+      image: '/images/keralahomz.png',
+      width: 110,
+      height: 100,
+    },
+    {
+      name: 'Property Management',
+      icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+      image:'/images/pmt.png',
+      width: 180,
       height: 100,
     },
     {
@@ -56,13 +63,6 @@ export default function Page() {
       icon: <Laptop className="w-8 h-8 text-primary" />,
       image:'/images/itsolution.png',
       width: 140,
-      height: 100,
-    },
-    {
-      name: 'Property Management',
-      icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image:'/images/pmt.png',
-      width: 180,
       height: 100,
     },
     {
