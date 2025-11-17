@@ -466,7 +466,7 @@ export default function AboutPage() {
                       </span>
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="sm:max-w-[500px] rounded-2xl">
+                  <DialogContent className="sm:max-w-[420px] rounded-2xl">
                     <DialogHeader>
                       <DialogTitle className="text-2xl font-bold text-gray-900">Submit an Enquiry</DialogTitle>
                     </DialogHeader>
