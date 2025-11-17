@@ -72,6 +72,13 @@ export default function Page() {
       width: 140,
       height: 100,
     },
+    {
+      name: 'Vertical CSR Fund',
+      icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+      image:'/images/people.png',
+      width: 140,
+      height: 100,
+    },
   ];
 
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
