@@ -40,16 +40,16 @@ export default function Page() {
     {
       name: 'Kerala Homz',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/keralahomz.png',
+      image: '/images/kh1.jpeg',
       width: 110,
       height: 100,
     },
     {
       name: 'Property Management',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image:'/images/pm2.jpeg',
-      width: 100,
-      height: 40,
+      image:'/images/pm3.jpeg',
+      width: 120,
+      height: 180,
     },
     {
       name: 'Home Kerala',
@@ -178,7 +178,7 @@ export default function Page() {
                       </span>
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="sm:max-w-[500px] rounded-2xl">
+                  <DialogContent className="sm:max-w-[420px] rounded-2xl">
                     <DialogHeader>
                       <DialogTitle className="text-2xl font-bold text-gray-900">Submit an Enquiry</DialogTitle>
                     </DialogHeader>
