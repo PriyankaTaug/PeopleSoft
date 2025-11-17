@@ -49,7 +49,7 @@ export default function Page() {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
       image:'/images/pm3.jpeg',
       width: 120,
-      height: 180,
+      height: 190,
     },
     {
       name: 'Home Kerala',
