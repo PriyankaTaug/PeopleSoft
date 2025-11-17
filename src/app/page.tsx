@@ -47,9 +47,9 @@ export default function Page() {
     {
       name: 'Property Management',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image:'/images/pmt.png',
-      width: 180,
-      height: 100,
+      image:'/images/pm2.jpeg',
+      width: 100,
+      height: 40,
     },
     {
       name: 'Home Kerala',
@@ -73,7 +73,7 @@ export default function Page() {
       height: 100,
     },
     {
-      name: 'Vertical CSR Fund',
+      name: 'CSR Fund',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
       image:'/images/people.png',
       width: 140,
@@ -163,11 +163,10 @@ export default function Page() {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
-                    Browse our set of Companies and offerings
+                  Browse our set of verticals and offerings
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    We offer a variety of tools and resources to help you manage
-                    your finances more effectively.
+                  We offer a variety of tools and resources designed to help improve your business
                   </p>
                 </div>
                 <Dialog open={isEnquiryOpen} onOpenChange={setIsEnquiryOpen}>
