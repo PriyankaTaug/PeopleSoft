@@ -15,7 +15,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { ArrowLeft, Mail, Phone, MapPin, Clock, Users, Award, Globe, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Users, Award, Globe, ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
@@ -81,14 +81,10 @@ export default function ContactPage() {
         <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <Button variant="ghost" size="sm" className="text-gray-700 hover:text-primary">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back
-              </Button>
+              <h1 className="cursor-pointer text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                People Soft
+              </h1>
             </Link>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              People Soft
-            </h1>
           </div>
         </header>
 

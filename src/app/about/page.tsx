@@ -15,7 +15,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { ArrowLeft, Users, Target, Award, Globe, Building, Home, Laptop, ClipboardCheck, Heart, ArrowRight } from 'lucide-react';
+import { Users, Target, Award, Globe, Building, Home, Laptop, ClipboardCheck, Heart, ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
@@ -81,14 +81,10 @@ export default function AboutPage() {
         <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <Button variant="ghost" size="sm" className="text-gray-700 hover:text-primary">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back
-              </Button>
+              <h1 className="cursor-pointer text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                People Soft
+              </h1>
             </Link>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              People Soft
-            </h1>
           </div>
           <nav>
             <Link href="/contact">
@@ -167,6 +163,19 @@ export default function AboutPage() {
               {/* Mission & Vision Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Mission Card */}
+
+                <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center mb-6">
+                    <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-lg p-3 mr-4">
+                      <Award className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    To be the global benchmark in consulting excellence, driving innovation and empowering organizations to achieve sustainable growth while maintaining the highest standards of performance and integrity.
+                  </p>
+                </div>
+                
                 <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-shadow duration-300">
                   <div className="flex items-center mb-6">
                     <div className="bg-gradient-to-r from-blue-600 to-primary rounded-lg p-3 mr-4">
@@ -180,17 +189,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Vision Card */}
-                <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex items-center mb-6">
-                    <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-lg p-3 mr-4">
-                      <Award className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
-                  </div>
-                  <p className="text-gray-700 leading-relaxed">
-                    To be the global benchmark in consulting excellence, driving innovation and empowering organizations to achieve sustainable growth while maintaining the highest standards of performance and integrity.
-                  </p>
-                </div>
+               
               </div>
             </div>
           </section>

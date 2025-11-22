@@ -40,9 +40,10 @@ export default function Page() {
     {
       name: 'Kerala Homz',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/kh1.jpeg',
+      image: '/images/khm.jpeg',
       width: 110,
       height: 100,
+      url:'http://keralahomez.com/'
     },
     {
       name: 'Property Management',
@@ -53,7 +54,7 @@ export default function Page() {
     },
     {
       name: 'Home Kerala',
-      image:'/images/hk.png',
+      image:'/images/hm.jpeg',
       width: 120,
       height: 80,
       url: 'https://homecarekerala.com/',
@@ -81,8 +82,6 @@ export default function Page() {
     },
   ];
 
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
-
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
@@ -97,22 +96,8 @@ export default function Page() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
-      {heroImage && (
-        <div className="fixed inset-0 z-0">
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            data-ai-hint={heroImage.imageHint}
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/40" />
-        </div>
-      )}
-      <div className="relative z-10 min-h-screen bg-gradient-to-b from-white/95 via-white/90 to-white backdrop-blur-sm">
+    <div className="relative min-h-screen bg-gradient-to-b from-white/95 via-white/90 to-white">
+      <div className="relative z-10 min-h-screen bg-transparent">
         <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
           <div className="flex items-center">
             <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
