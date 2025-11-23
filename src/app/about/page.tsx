@@ -80,7 +80,14 @@ export default function AboutPage() {
         {/* Header */}
         <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
           <div className="flex items-center gap-4">
-            <Link href="/">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/ps.png"
+                alt="People Soft logo"
+                width={48}
+                height={48}
+                className="rounded-md object-contain"
+              />
               <h1 className="cursor-pointer text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                 People Soft
               </h1>
@@ -207,9 +214,9 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {/* Real Estate Division */}
-                <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                {/* Real Estate Business - KeralaHomz */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
                   <div className="flex items-center mb-4">
                     <div className="bg-gray-50 p-2 rounded-lg mr-3">
                       <Image
@@ -222,24 +229,26 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-gray-900">KeralaHomz</h3>
-                      <p className="text-sm text-gray-600">Real Estate Solutions</p>
+                      <p className="text-sm text-gray-600">Real Estate Business</p>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    Comprehensive real estate services including property sales, rentals, and development across Kerala's residential and commercial markets.
+                    A complete real estate platform that facilitates buying, selling, renting, and building of
+                    residential and commercial properties across Kerala for homeowners, investors, developers, and
+                    tenants.
                   </p>
-                  <div className="text-xs text-gray-500">
-                    www.keralahomz.com
-                  </div>
+                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Easy Moves, Happy Homes</p>
+                  <p className="text-xs text-gray-600 mb-2">USP: To accelerate sales and revenue in a short span.</p>
+                  <div className="text-xs text-gray-500">www.keralahomz.com</div>
                 </div>
 
-                {/* Property Management Division */}
-                <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+                {/* Property Management & Maintenance - Kerala Service Hub */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
                   <div className="flex items-center mb-4">
                     <div className="bg-gray-50 p-2 rounded-lg mr-3">
                       <Image
                         src="/images/pmt.png"
-                        alt="Property Management"
+                        alt="Kerala Service Hub"
                         width={60}
                         height={60}
                         className="object-contain"
@@ -247,19 +256,21 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub</h3>
-                      <p className="text-sm text-gray-600">Property Management</p>
+                      <p className="text-sm text-gray-600">Property Management &amp; Maintenance</p>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    Full-service property management including maintenance contracts, facility handling, preventive scheduling, and emergency repairs.
+                    Offers comprehensive property management covering maintenance contracts, cleaning, repairs,
+                    preventive maintenance scheduling, emergency repairs, and full facility handling for hassle-free
+                    property ownership.
                   </p>
-                  <div className="text-xs text-gray-500">
-                    www.keralaservicehub.com
-                  </div>
+                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Building Value, Delivering Care</p>
+                  <p className="text-xs text-gray-600 mb-2">USP: Care your property without hassle.</p>
+                  <div className="text-xs text-gray-500">www.keralaservicehub.com</div>
                 </div>
 
-                {/* Healthcare Division */}
-                <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+                {/* Homecare & Personal Support Services - HomeCare Kerala */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
                   <div className="flex items-center mb-4">
                     <div className="bg-gray-50 p-2 rounded-lg mr-3">
                       <Image
@@ -272,19 +283,23 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-gray-900">HomeCare Kerala</h3>
-                      <p className="text-sm text-gray-600">Healthcare Services</p>
+                      <p className="text-sm text-gray-600">Homecare &amp; Personal Support Services</p>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    Professional healthcare solutions including elder care, patient care, nursing services, and trained support staff with comprehensive background verification.
+                    Delivers professional homecare services including baby care, elder care, patient and nursing
+                    care, bystander assistance, maid and housekeeping services with trained, background-checked
+                    caregivers for families, hospitals, and individuals.
                   </p>
-                  <div className="text-xs text-gray-500">
-                    www.homecarekerala.com
-                  </div>
+                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Care redefined</p>
+                  <p className="text-xs text-gray-600 mb-2">
+                    USP: Professional values at the heart of our care services.
+                  </p>
+                  <div className="text-xs text-gray-500">www.homecarekerala.com</div>
                 </div>
 
-                {/* IT Solutions Division */}
-                <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+                {/* IT Solutions & Business Technology Services */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
                   <div className="flex items-center mb-4">
                     <div className="bg-gray-50 p-2 rounded-lg mr-3">
                       <Image
@@ -296,20 +311,24 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">IT Solutions</h3>
-                      <p className="text-sm text-gray-600">Technology Services</p>
+                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub – IT Solutions</h3>
+                      <p className="text-sm text-gray-600">IT Solutions &amp; Business Technology Services</p>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    Enterprise technology solutions including web development, mobile applications, ERP/CRM systems, and business process automation.
+                    Provides website and logo design, software and mobile app development, custom ERP &amp; CRM
+                    implementation, business process automation, and IT training and onboarding support for
+                    next-generation businesses.
                   </p>
-                  <div className="text-xs text-gray-500">
-                    www.keralaservicehub.com/itsolutions
-                  </div>
+                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Your Growth. Our Digital Expertise</p>
+                  <p className="text-xs text-gray-600 mb-2">
+                    USP: Expert services for the next-generation business.
+                  </p>
+                  <div className="text-xs text-gray-500">www.keralaservicehub.com/itsolutions</div>
                 </div>
 
-                {/* HR Consultancy Division */}
-                <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300">
+                {/* HR & Talent Consultancy - Talent Connect Division */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
                   <div className="flex items-center mb-4">
                     <div className="bg-gray-50 p-2 rounded-lg mr-3">
                       <Image
@@ -321,16 +340,51 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">Talent Connect</h3>
-                      <p className="text-sm text-gray-600">HR Consultancy</p>
+                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub – Talent Connect</h3>
+                      <p className="text-sm text-gray-600">HR &amp; Talent Consultancy</p>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    Strategic talent acquisition and HR solutions including recruitment, workforce planning, and organizational development services.
+                    Delivers full-spectrum recruitment and talent solutions including identification, assessment,
+                    onboarding, workforce planning, and leadership development to build strong, adaptive teams.
                   </p>
-                  <div className="text-xs text-gray-500">
-                    www.keralaservicehub.com/talentconnect
+                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Connecting People, Building Teams</p>
+                  <p className="text-xs text-gray-600 mb-2">
+                    USP: Ready supply of skilled professionals, reduced hiring time, improved project delivery, and
+                    flexibility to scale with changing business needs.
+                  </p>
+                  <div className="text-xs text-gray-500">www.keralaservicehub.com/talentconnect</div>
+                </div>
+
+                {/* CSR Initiative */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col justify-between">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-gray-50 p-2 rounded-lg mr-3">
+                      <Image
+                        src="/images/csrf.jpeg"
+                        alt="CSR Initiatives"
+                        width={60}
+                        height={60}
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub – CSR Initiatives</h3>
+                      <p className="text-sm text-gray-600">CSR Initiative for Differently-Abled Children</p>
+                    </div>
                   </div>
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                    A dedicated CSR program where a portion of annual profits supports physically challenged
+                    children and differently-abled students across Kerala through education, infrastructure,
+                    health, and skill development initiatives.
+                  </p>
+                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Unlocking Potential, Igniting Dreams</p>
+                  <p className="text-xs text-gray-600 mb-2">
+                    Focus areas include educational empowerment, accessibility infrastructure, vocational training,
+                    health and wellness support, and community integration in partnership with NGOs and
+                    institutions.
+                  </p>
+                  <div className="text-xs text-gray-500">www.keralaservicehub.com/csrinitiatives</div>
                 </div>
               </div>
             </div>
