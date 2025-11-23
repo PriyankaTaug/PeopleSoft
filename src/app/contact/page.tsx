@@ -80,7 +80,14 @@ export default function ContactPage() {
         {/* Header */}
         <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
           <div className="flex items-center gap-4">
-            <Link href="/">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/ps.png"
+                alt="People Soft logo"
+                width={48}
+                height={48}
+                className="rounded-md object-contain"
+              />
               <h1 className="cursor-pointer text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                 People Soft
               </h1>
