@@ -22,11 +22,14 @@ import {
   Laptop,
   ClipboardCheck,
   ArrowRight,
+  Menu,
+  X,
 } from 'lucide-react';
 
 export default function Page() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
   const [isEnquiryOpen, setIsEnquiryOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -96,37 +99,50 @@ export default function Page() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-white/95 via-white/90 to-white">
       <div className="relative z-10 min-h-screen bg-transparent">
-        <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/images/ps.png"
-              alt="People Soft logo"
-              width={56}
-              height={56}
-              className="rounded-md object-contain"
-            />
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              People Soft
-            </h1>
+        {/* Header / Menubar */}
+        <header className="relative py-4 px-4 md:py-6 md:px-16 lg:px-24 border-b border-white/20 bg-white/50 backdrop-blur-md">
+          <div className="flex items-center justify-between gap-4">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/ps.png"
+                alt="People Soft logo"
+                width={56}
+                height={56}
+                className="rounded-md object-contain"
+              />
+              <h1 className="text-2xl md:text-3xl font-bold leading-tight whitespace-nowrap bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                PeopleSoft
+              </h1>
+            </Link>
+
+            {/* Desktop nav */}
+            <nav className="hidden sm:flex items-center gap-4 font-semibold text-gray-700">
+              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+              <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+              <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
+            </nav>
+
+            {/* Mobile hamburger toggle */}
+            <button
+              type="button"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/40 sm:hidden"
+              onClick={() => setIsMenuOpen((prev) => !prev)}
+              aria-label="Toggle navigation menu"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
-          <nav className="flex gap-4">
-            <Link href="/about">
-              <Button
-                variant="ghost"
-                className="text-gray-700 hover:text-primary font-semibold"
-              >
-                About Us
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button
-                variant="ghost"
-                className="text-gray-700 hover:text-primary font-semibold"
-              >
-                Contact Us
-              </Button>
-            </Link>
-          </nav>
+
+          {/* Mobile dropdown menu under header */}
+          {isMenuOpen && (
+            <div className="absolute left-0 right-0 top-full z-40 bg-white border-t border-gray-200 shadow-md sm:hidden">
+              <nav className="flex flex-col gap-3 px-6 py-4 text-base font-semibold text-gray-800">
+                <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">Home</Link>
+                <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">About Us</Link>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">Contact Us</Link>
+              </nav>
+            </div>
+          )}
         </header>
 
         <main className="px-8 md:px-16 lg:px-24 py-20">

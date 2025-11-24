@@ -15,13 +15,14 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { Users, Target, Award, Globe, Building, Home, Laptop, ClipboardCheck, Heart, ArrowRight } from 'lucide-react';
+import { Users, Target, Award, Globe, Building, Home, Laptop, ClipboardCheck, Heart, ArrowRight, Menu, X } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 
 export default function AboutPage() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
   const [isEnquiryOpen, setIsEnquiryOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -77,9 +78,9 @@ export default function AboutPage() {
         </div>
       )}
       <div className="relative z-10 min-h-screen bg-gradient-to-b from-white/95 via-white/90 to-white backdrop-blur-sm">
-        {/* Header */}
-        <header className="py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center border-b border-white/20 bg-white/50 backdrop-blur-md">
-          <div className="flex items-center gap-4">
+        {/* Header / Menubar */}
+        <header className="relative py-4 px-4 md:py-6 md:px-16 lg:px-24 border-b border-white/20 bg-white/50 backdrop-blur-md">
+          <div className="flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/images/ps.png"
@@ -88,21 +89,39 @@ export default function AboutPage() {
                 height={48}
                 className="rounded-md object-contain"
               />
-              <h1 className="cursor-pointer text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                People Soft
+              <h1 className="cursor-pointer text-2xl md:text-3xl font-bold leading-tight whitespace-nowrap bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                PeopleSoft
               </h1>
             </Link>
+
+            {/* Desktop nav */}
+            <nav className="hidden sm:flex items-center gap-4 font-semibold text-gray-700">
+              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+              <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+              <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
+            </nav>
+
+            {/* Mobile hamburger toggle */}
+            <button
+              type="button"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/40 sm:hidden"
+              onClick={() => setIsMenuOpen((prev) => !prev)}
+              aria-label="Toggle navigation menu"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
-          <nav>
-            <Link href="/contact">
-              <Button 
-                variant="ghost" 
-                className="text-gray-700 hover:text-primary font-semibold"
-              >
-                Contact Us
-              </Button>
-            </Link>
-          </nav>
+
+          {/* Mobile dropdown menu under header */}
+          {isMenuOpen && (
+            <div className="absolute left-0 right-0 top-full z-40 bg-white border-t border-gray-200 shadow-md sm:hidden">
+              <nav className="flex flex-col gap-3 px-6 py-4 text-base font-semibold text-gray-800">
+                <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">Home</Link>
+                <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">About Us</Link>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">Contact Us</Link>
+              </nav>
+            </div>
+          )}
         </header>
 
         <main className="px-0">
@@ -121,18 +140,18 @@ export default function AboutPage() {
                     </span>
                   </h1>
                   <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                    PeopleSoft Consultancy is a premier holding company delivering transformational consulting solutions across five strategic verticals. We empower organizations to achieve operational excellence, accelerate growth, and maintain competitive leadership in rapidly evolving markets.
+                    PeopleSoft Consultancy is a premier holding company delivering transformational consulting solutions across six strategic verticals. We empower organizations to achieve operational excellence, accelerate growth, and maintain competitive leadership in rapidly evolving markets.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 h-full">
                       <div className="text-2xl font-bold text-primary">200+</div>
                       <div className="text-sm text-gray-300">Projects Delivered</div>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
-                      <div className="text-2xl font-bold text-primary">5</div>
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 h-full">
+                      <div className="text-2xl font-bold text-primary">6</div>
                       <div className="text-sm text-gray-300">Industry Verticals</div>
                     </div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 h-full">
                       <div className="text-2xl font-bold text-primary">100%</div>
                       <div className="text-sm text-gray-300">Client Satisfaction</div>
                     </div>
@@ -210,7 +229,7 @@ export default function AboutPage() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Industry-Leading Solutions</h2>
                 <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                  Our diversified portfolio spans five strategic verticals, each delivering specialized expertise and innovative solutions tailored to meet the evolving demands of modern enterprises.
+                  Our diversified portfolio spans six strategic verticals, each delivering specialized expertise and innovative solutions tailored to meet the evolving demands of modern enterprises.
                 </p>
               </div>
 
@@ -461,21 +480,21 @@ export default function AboutPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <div className="text-center">
-                  <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+                  <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 h-full">
                     <div className="text-3xl font-bold text-primary mb-2">200+</div>
                     <div className="text-gray-700 font-semibold mb-2">Projects Delivered</div>
                     <div className="text-sm text-gray-600">Successfully completed across all verticals</div>
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
-                    <div className="text-3xl font-bold text-primary mb-2">5</div>
+                  <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 h-full">
+                    <div className="text-3xl font-bold text-primary mb-2">6</div>
                     <div className="text-gray-700 font-semibold mb-2">Industry Verticals</div>
                     <div className="text-sm text-gray-600">Specialized expertise across key sectors</div>
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
+                  <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 h-full">
                     <div className="text-3xl font-bold text-primary mb-2">100%</div>
                     <div className="text-gray-700 font-semibold mb-2">Client Satisfaction</div>
                     <div className="text-sm text-gray-600">Commitment to excellence in every engagement</div>
