@@ -153,14 +153,20 @@ export default function Page() {
             </div>
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-                <div>
-                  <h3 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
-                    Browse our set of verticals and offerings
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    We offer a variety of tools and resources designed to help improve your business
-                  </p>
-                </div>
+         <div>
+<p className="text-base text-gray-600 leading-relaxed mb-6">
+    Peoplesoft Consultancy is a holding company that offers specialized consulting services across six
+    verticals, addressing diverse industry needs. These verticals include real estate, facility
+    management, healthcare, IT solutions, HR and CSR initiatives with a strong focus on streamlining
+    operations and driving business excellence.
+  </p>
+  <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
+    Browse our set of verticals and offerings
+  </h2>
+  <p className="text-lg text-gray-600 leading-relaxed">
+    We offer a variety of tools and resources designed to help improve your business
+  </p>
+</div>
                 <Dialog open={isEnquiryOpen} onOpenChange={setIsEnquiryOpen}>
                   <DialogTrigger asChild>
                     <Button className="h-14 px-8 rounded-full font-bold text-base bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
@@ -314,82 +320,6 @@ export default function Page() {
             </div>
           </section>
 
-          {/* Company overview */}
-          <section className="mt-24 max-w-7xl mx-auto">
-            <div className="relative bg-white/95 backdrop-blur-sm border border-gray-100 rounded-3xl shadow-[0_18px_45px_rgba(15,23,42,0.06)] px-8 md:px-12 py-10 md:py-14 overflow-hidden">
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-blue-500 to-sky-400" />
-              <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1.1fr)] gap-10 md:gap-16 items-start relative z-10">
-                <div className="pr-0 md:pr-6">
-                  <p className="text-xs md:text-sm font-semibold tracking-[0.22em] text-primary uppercase mb-2 md:mb-3">
-                    Company Overview
-                  </p>
-                  <h3 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4 md:mb-5">
-                    About Peoplesoft Consultancy
-                  </h3>
-                  <p className="text-sm md:text-base leading-relaxed md:leading-8 text-slate-600 max-w-xl">
-                    Peoplesoft Consultancy is a holding company that offers specialized consulting services
-                    across five verticals, addressing diverse industry needs. These verticals include real
-                    estate, facility management, healthcare, IT solutions, and the HR sector, with a strong
-                    focus on streamlining operations and driving business excellence.
-                  </p>
-                </div>
-                <div className="space-y-4 md:space-y-5">
-                  <div className="flex items-center justify-between gap-3">
-                    <h4 className="text-xs md:text-sm font-semibold tracking-[0.20em] text-slate-500 uppercase">
-                      Our Verticals
-                    </h4>
-                    <span className="hidden md:inline-flex h-px flex-1 bg-gradient-to-r from-slate-200 via-slate-100 to-transparent" />
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
-                    <div className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50/80 px-4 py-3.5 shadow-[0_10px_25px_rgba(15,23,42,0.03)]">
-                      <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
-                        <Home className="h-4 w-4" />
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-slate-900">Real Estate &amp; Property</p>
-                        <p className="text-xs text-slate-600">
-                          Advisory across residential, commercial and investment assets.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50/80 px-4 py-3.5 shadow-[0_10px_25px_rgba(15,23,42,0.03)]">
-                      <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
-                        <Building className="h-4 w-4" />
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-slate-900">Facility Management</p>
-                        <p className="text-xs text-slate-600">
-                          End-to-end management for efficient asset operations.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50/80 px-4 py-3.5 shadow-[0_10px_25px_rgba(15,23,42,0.03)]">
-                      <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
-                        <ClipboardCheck className="h-4 w-4" />
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-slate-900">Healthcare &amp; CSR</p>
-                        <p className="text-xs text-slate-600">
-                          Support services around healthcare initiatives and CSR.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50/80 px-4 py-3.5 shadow-[0_10px_25px_rgba(15,23,42,0.03)]">
-                      <span className="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
-                        <Laptop className="h-4 w-4" />
-                      </span>
-                      <div>
-                        <p className="text-sm font-semibold text-slate-900">IT &amp; HR Solutions</p>
-                        <p className="text-xs text-slate-600">
-                          Technology and talent solutions to enable business growth.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </main>
       </div>
     </div>
