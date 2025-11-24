@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'People Soft',
-  description: 'Change the way you use your money.',
+  description: 'Consulting Today. Leading Tomorrow.',
 };
 
 export default function RootLayout({

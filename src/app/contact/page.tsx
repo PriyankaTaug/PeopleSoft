@@ -162,9 +162,12 @@ export default function ContactPage() {
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">Visit Us</h4>
                   <p className="text-gray-600 mb-4">Schedule an in-person consultation</p>
-                  <div className="text-gray-700 text-sm">
+                  <div className="text-gray-700 text-sm leading-relaxed">
+                    <p>H.No. IX/499 M.R,</p>
+                    <p>Chanthavila</p>
                     <p>Near KINFRA Film and Video Park,</p>
-                    <p>Kazhakkoottam, Thiruvananthapuram, Kerala</p>
+                    <p>Kattayikonam PO</p>
+                    <p>Thiruvananthapuram</p>
                   </div>
                 </CardContent>
               </Card>

@@ -73,7 +73,7 @@ export default function Page() {
       height: 100,
     },
     {
-      name: 'CSR Fund',
+      name: 'CSR Initiatives',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
       image: '/images/csrf.jpeg',
       width: 140,
@@ -153,20 +153,23 @@ export default function Page() {
             </div>
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-         <div>
-<p className="text-base text-gray-600 leading-relaxed mb-6">
-    Peoplesoft Consultancy is a holding company that offers specialized consulting services across six
-    verticals, addressing diverse industry needs. These verticals include real estate, facility
-    management, healthcare, IT solutions, HR and CSR initiatives with a strong focus on streamlining
-    operations and driving business excellence.
-  </p>
-  <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
-    Browse our set of verticals and offerings
-  </h2>
-  <p className="text-lg text-gray-600 leading-relaxed">
-    We offer a variety of tools and resources designed to help improve your business
-  </p>
-</div>
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
+                    Company over view
+                  </h2>
+                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    Peoplesoft Consultancy is a holding company that offers specialized consulting services across six
+                    verticals, addressing diverse industry needs. These verticals include real estate, facility
+                    management, healthcare, IT solutions, HR and CSR initiatives with a strong focus on streamlining
+                    operations and driving business excellence.
+                  </p>
+                  <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
+                    Browse our set of verticals and offerings
+                  </h2>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    We offer a variety of tools and resources designed to help improve your business
+                  </p>
+                </div>
                 <Dialog open={isEnquiryOpen} onOpenChange={setIsEnquiryOpen}>
                   <DialogTrigger asChild>
                     <Button className="h-14 px-8 rounded-full font-bold text-base bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">

@@ -221,15 +221,14 @@ export default function AboutPage() {
                     <div className="bg-gray-50 p-2 rounded-lg mr-3">
                       <Image
                         src="/images/kh.png"
-                        alt="KeralaHomz"
+                        alt="KeralaHomez"
                         width={60}
                         height={60}
                         className="object-contain"
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">KeralaHomz</h3>
-                      <p className="text-sm text-gray-600">Real Estate Business</p>
+                      <h3 className="text-lg font-bold text-gray-900">KeralaHomez</h3>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
@@ -239,7 +238,7 @@ export default function AboutPage() {
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Easy Moves, Happy Homes</p>
                   <p className="text-xs text-gray-600 mb-2">USP: To accelerate sales and revenue in a short span.</p>
-                  <div className="text-xs text-gray-500">www.keralahomz.com</div>
+                  <div className="text-xs text-gray-500">www.keralahomez.com</div>
                 </div>
 
                 {/* Property Management & Maintenance - Kerala Service Hub */}
@@ -255,8 +254,7 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub</h3>
-                      <p className="text-sm text-gray-600">Property Management &amp; Maintenance</p>
+                      <h3 className="text-lg font-bold text-gray-900">Property Management</h3>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
@@ -282,9 +280,7 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">HomeCare Kerala</h3>
-                      <p className="text-sm text-gray-600">Homecare &amp; Personal Support Services</p>
-                    </div>
+                      <h3 className="text-lg font-bold text-gray-900">HomeCare Kerala</h3>                    </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
                     Delivers professional homecare services including baby care, elder care, patient and nursing
@@ -311,7 +307,7 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub – IT Solutions</h3>
+                      <h3 className="text-lg font-bold text-gray-900">IT Solutions</h3>
                       <p className="text-sm text-gray-600">IT Solutions &amp; Business Technology Services</p>
                     </div>
                   </div>
@@ -340,8 +336,7 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub – Talent Connect</h3>
-                      <p className="text-sm text-gray-600">HR &amp; Talent Consultancy</p>
+                      <h3 className="text-lg font-bold text-gray-900">Talent Connect</h3>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
@@ -369,8 +364,7 @@ export default function AboutPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900">Kerala Service Hub – CSR Initiatives</h3>
-                      <p className="text-sm text-gray-600">CSR Initiative for Differently-Abled Children</p>
+                      <h3 className="text-lg font-bold text-gray-900">CSR Initiatives</h3>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">
