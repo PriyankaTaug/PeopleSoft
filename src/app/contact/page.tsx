@@ -136,7 +136,7 @@ export default function ContactPage() {
                 Business Goals
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center">
               Connect with our consulting experts to explore how we can transform your business operations and drive sustainable growth across all verticals.
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function ContactPage() {
                   Business Growth?
                 </span>
               </h3>
-              <p className="text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed text-center">
                 Our consulting experts are standing by to discuss your unique challenges and develop customized solutions that drive measurable results. Let's start the conversation today.
               </p>
               

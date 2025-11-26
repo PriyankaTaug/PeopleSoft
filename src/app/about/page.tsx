@@ -139,7 +139,7 @@ export default function AboutPage() {
                       Transformation
                     </span>
                   </h1>
-                  <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                  <p className="text-xl text-gray-300 leading-relaxed mb-8 text-justify hyphens-auto" lang="en">
                     PeopleSoft Consultancy is a premier holding company delivering transformational consulting solutions across six strategic verticals. We empower organizations to achieve operational excellence, accelerate growth, and maintain competitive leadership in rapidly evolving markets.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -250,13 +250,13 @@ export default function AboutPage() {
                       <h3 className="text-lg font-bold text-gray-900">KeralaHomez</h3>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify hyphens-auto" lang="en">
                     A complete real estate platform that facilitates buying, selling, renting, and building of
                     residential and commercial properties across Kerala for homeowners, investors, developers, and
                     tenants.
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Easy Moves, Happy Homes</p>
-                  <p className="text-xs text-gray-600 mb-2">USP: To accelerate sales and revenue in a short span.</p>
+                  <p className="text-xs text-gray-600 mb-2 text-justify">USP: To accelerate sales and revenue in a short span.</p>
                   <div className="text-xs text-gray-500">www.keralahomez.com</div>
                 </div>
 
@@ -276,13 +276,13 @@ export default function AboutPage() {
                       <h3 className="text-lg font-bold text-gray-900">Property Management</h3>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify hyphens-auto" lang="en">
                     Offers comprehensive property management covering maintenance contracts, cleaning, repairs,
                     preventive maintenance scheduling, emergency repairs, and full facility handling for hassle-free
                     property ownership.
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Building Value, Delivering Care</p>
-                  <p className="text-xs text-gray-600 mb-2">USP: Care your property without hassle.</p>
+                  <p className="text-xs text-gray-600 mb-2 text-justify">USP: Care your property without hassle.</p>
                   <div className="text-xs text-gray-500">www.keralaservicehub.com</div>
                 </div>
 
@@ -301,13 +301,13 @@ export default function AboutPage() {
                     <div>
                       <h3 className="text-lg font-bold text-gray-900">HomeCare Kerala</h3>                    </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify hyphens-auto" lang="en">
                     Delivers professional homecare services including baby care, elder care, patient and nursing
                     care, bystander assistance, maid and housekeeping services with trained, background-checked
                     caregivers for families, hospitals, and individuals.
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Care redefined</p>
-                  <p className="text-xs text-gray-600 mb-2">
+                  <p className="text-xs text-gray-600 mb-2 text-justify">
                     USP: Professional values at the heart of our care services.
                   </p>
                   <div className="text-xs text-gray-500">www.homecarekerala.com</div>
@@ -330,13 +330,13 @@ export default function AboutPage() {
                       <p className="text-sm text-gray-600">IT Solutions &amp; Business Technology Services</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify hyphens-auto" lang="en">
                     Provides website and logo design, software and mobile app development, custom ERP &amp; CRM
                     implementation, business process automation, and IT training and onboarding support for
                     next-generation businesses.
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Your Growth. Our Digital Expertise</p>
-                  <p className="text-xs text-gray-600 mb-2">
+                  <p className="text-xs text-gray-600 mb-2 text-justify">
                     USP: Expert services for the next-generation business.
                   </p>
                   <div className="text-xs text-gray-500">www.keralaservicehub.com/itsolutions</div>
@@ -358,12 +358,12 @@ export default function AboutPage() {
                       <h3 className="text-lg font-bold text-gray-900">Talent Connect</h3>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify hyphens-auto" lang="en">
                     Delivers full-spectrum recruitment and talent solutions including identification, assessment,
                     onboarding, workforce planning, and leadership development to build strong, adaptive teams.
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Connecting People, Building Teams</p>
-                  <p className="text-xs text-gray-600 mb-2">
+                  <p className="text-xs text-gray-600 mb-2 text-justify">
                     USP: Ready supply of skilled professionals, reduced hiring time, improved project delivery, and
                     flexibility to scale with changing business needs.
                   </p>
@@ -386,13 +386,13 @@ export default function AboutPage() {
                       <h3 className="text-lg font-bold text-gray-900">CSR Initiatives</h3>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3 text-justify hyphens-auto" lang="en">
                     A dedicated CSR program where a portion of annual profits supports physically challenged
                     children and differently-abled students across Kerala through education, infrastructure,
                     health, and skill development initiatives.
                   </p>
                   <p className="text-xs font-semibold text-primary mb-1">Tagline: Unlocking Potential, Igniting Dreams</p>
-                  <p className="text-xs text-gray-600 mb-2">
+                  <p className="text-xs text-gray-600 mb-2 text-justify">
                     Focus areas include educational empowerment, accessibility infrastructure, vocational training,
                     health and wellness support, and community integration in partnership with NGOs and
                     institutions.
@@ -423,7 +423,7 @@ export default function AboutPage() {
                       <Globe className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-3">Multi-Vertical Expertise</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed text-justify hyphens-auto" lang="en">
                       Deep domain knowledge across real estate, healthcare, IT, property management, and HR sectors.
                     </p>
                   </div>
@@ -435,7 +435,7 @@ export default function AboutPage() {
                       <Target className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 mb-3">Results-Driven Approach</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed text-justify hyphens-auto" lang="en">
                       Measurable outcomes with 100% client satisfaction rate and proven ROI across all engagements.
                     </p>
                   </div>
@@ -446,8 +446,8 @@ export default function AboutPage() {
                     <div className="bg-gradient-to-r from-purple-600 to-violet-600 rounded-lg p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Users className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-3">Dedicated Teams</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">Dedicated<br />Teams</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed text-justify hyphens-auto" lang="en">
                       Specialized consultants with extensive experience and commitment to client success.
                     </p>
                   </div>
@@ -458,8 +458,8 @@ export default function AboutPage() {
                     <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-lg p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Award className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-3">Innovation Focus</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">Innovation<br />Focus</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed text-justify hyphens-auto" lang="en">
                       Cutting-edge solutions and methodologies that drive digital transformation and operational efficiency.
                     </p>
                   </div>

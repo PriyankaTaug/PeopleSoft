@@ -173,7 +173,7 @@ export default function Page() {
                   <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
                     Company over view
                   </h2>
-                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                  <p className="text-base text-gray-600 leading-relaxed mb-6 text-justify hyphens-auto" lang="en">
                     Peoplesoft Consultancy is a holding company that offers specialized consulting services across six
                     verticals, addressing diverse industry needs. These verticals include real estate, facility
                     management, healthcare, IT solutions, HR and CSR initiatives with a strong focus on streamlining
