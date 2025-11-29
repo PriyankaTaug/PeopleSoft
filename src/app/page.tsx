@@ -42,7 +42,7 @@ export default function Page() {
     {
       name: 'Kerala Homez',
       icon: <Building className="w-8 h-8 text-primary" />,
-      image: '/images/khz.png',
+      image: '/images/khm5.png',
       width: 110,
       height: 100,
       url: 'http://keralahomez.com/',
@@ -78,7 +78,7 @@ export default function Page() {
     {
       name: 'CSR Initiatives',
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      image: '/images/csrf.jpeg',
+      image: '/images/csrf1.png',
       width: 140,
       height: 100,
     },
