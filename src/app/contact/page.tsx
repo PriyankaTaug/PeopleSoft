@@ -127,12 +127,12 @@ export default function ContactPage() {
         <main className="px-8 md:px-16 lg:px-24 py-20">
           {/* Hero Section */}
           <div className="text-center mb-20">
-            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-block bg-primary/10 text-[#1F4E79] px-4 py-2 rounded-full text-sm font-semibold mb-6">
               GET IN TOUCH WITH EXPERTS
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Let's Discuss Your
-              <span className="block bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
+              <span className="block text-[#1F4E79] bg-clip-text text-transparent">
                 Business Goals
               </span>
             </h2>
@@ -159,7 +159,7 @@ export default function ContactPage() {
                   <p className="text-gray-600 mb-4">Send us a detailed message about your requirements</p>
                   <a 
                     href="mailto:mail@peoplesoft-consult.com"
-                    className="text-primary hover:text-blue-600 transition-colors duration-300 font-semibold"
+                    className="text-primary text-[#1F4E79] font-semibold"
                   >
                     mail@peoplesoft-consult.com
                   </a>
@@ -176,7 +176,7 @@ export default function ContactPage() {
                   <p className="text-gray-600 mb-4">Speak directly with our consulting experts</p>
                   <a 
                     href="tel:7902449454"
-                    className="text-primary hover:text-blue-600 transition-colors duration-300 font-semibold"
+                    className="text-[#1F4E79] hover:text-blue-600 transition-colors duration-300 font-semibold"
                   >
                     +91 7902449454
                   </a>
@@ -253,7 +253,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
                 Ready to Accelerate Your
-                <span className="block bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
+                <span className="block text-[#1F4E79] bg-clip-text text-transparent">
                   Business Growth?
                 </span>
               </h3>
@@ -264,7 +264,7 @@ export default function ContactPage() {
               <div className="flex justify-center">
                 <Dialog open={isEnquiryOpen} onOpenChange={setIsEnquiryOpen}>
                   <DialogTrigger asChild>
-                    <Button className="h-14 px-8 rounded-full font-bold text-base bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
+                    <Button className="h-14 px-8 rounded-full font-bold text-base text-[#1F4E79] hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
                       Submit Enquiry
                       <span className="bg-white text-primary rounded-full p-1.5 group-hover:translate-x-1 transition-transform duration-300">
                         <ArrowRight className="w-4 h-4" />

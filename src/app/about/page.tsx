@@ -89,7 +89,7 @@ export default function AboutPage() {
                 height={48}
                 className="rounded-md object-contain"
               />
-              <h1 className="cursor-pointer text-2xl md:text-3xl font-bold leading-tight whitespace-nowrap bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+              <h1 className="cursor-pointer text-2xl md:text-3xl font-bold leading-tight whitespace-nowrap text-[#1F4E79]">
                 PeopleSoft
               </h1>
             </Link>
@@ -255,7 +255,7 @@ export default function AboutPage() {
                     residential and commercial properties across Kerala for homeowners, investors, developers, and
                     tenants.
                   </p>
-                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Easy Moves, Happy Homes</p>
+                  <p className="text-xs font-semibold text-[#1F4E79] mb-1">Tagline: Easy Moves, Happy Homes</p>
                   <p className="text-xs text-gray-600 mb-2 text-justify">USP: To accelerate sales and revenue in a short span.</p>
                   <div className="text-xs text-gray-500">www.keralahomez.com</div>
                 </div>
@@ -281,7 +281,7 @@ export default function AboutPage() {
                     preventive maintenance scheduling, emergency repairs, and full facility handling for hassle-free
                     property ownership.
                   </p>
-                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Building Value, Delivering Care</p>
+                  <p className="text-xs font-semibold text-[#1F4E79] mb-1">Tagline: Building Value, Delivering Care</p>
                   <p className="text-xs text-gray-600 mb-2 text-justify">USP: Care your property without hassle.</p>
                   <div className="text-xs text-gray-500">www.keralaservicehub.com</div>
                 </div>
@@ -306,7 +306,7 @@ export default function AboutPage() {
                     care, bystander assistance, maid and housekeeping services with trained, background-checked
                     caregivers for families, hospitals, and individuals.
                   </p>
-                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Care redefined</p>
+                  <p className="text-xs font-semibold text-[#1F4E79] mb-1">Tagline: Care redefined</p>
                   <p className="text-xs text-gray-600 mb-2 text-justify">
                     USP: Professional values at the heart of our care services.
                   </p>
@@ -335,7 +335,7 @@ export default function AboutPage() {
                     implementation, business process automation, and IT training and onboarding support for
                     next-generation businesses.
                   </p>
-                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Your Growth. Our Digital Expertise</p>
+                  <p className="text-xs font-semibold text-[#1F4E79] mb-1">Tagline: Your Growth. Our Digital Expertise</p>
                   <p className="text-xs text-gray-600 mb-2 text-justify">
                     USP: Expert services for the next-generation business.
                   </p>
@@ -362,7 +362,7 @@ export default function AboutPage() {
                     Delivers full-spectrum recruitment and talent solutions including identification, assessment,
                     onboarding, workforce planning, and leadership development to build strong, adaptive teams.
                   </p>
-                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Connecting People, Building Teams</p>
+                  <p className="text-xs font-semibold text-[#1F4E79] mb-1">Tagline: Connecting People, Building Teams</p>
                   <p className="text-xs text-gray-600 mb-2 text-justify">
                     USP: Ready supply of skilled professionals, reduced hiring time, improved project delivery, and
                     flexibility to scale with changing business needs.
@@ -391,7 +391,7 @@ export default function AboutPage() {
                     children and differently-abled students across Kerala through education, infrastructure,
                     health, and skill development initiatives.
                   </p>
-                  <p className="text-xs font-semibold text-primary mb-1">Tagline: Unlocking Potential, Igniting Dreams</p>
+                  <p className="text-xs font-semibold text-[#1F4E79] mb-1">Tagline: Unlocking Potential, Igniting Dreams</p>
                   <p className="text-xs text-gray-600 mb-2 text-justify">
                     Focus areas include educational empowerment, accessibility infrastructure, vocational training,
                     health and wellness support, and community integration in partnership with NGOs and
@@ -407,7 +407,7 @@ export default function AboutPage() {
           <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
             <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-24">
               <div className="text-center mb-16">
-                <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-block text-[#1F4E79] px-4 py-2 rounded-full text-sm font-semibold mb-6">
                   COMPETITIVE ADVANTAGES
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Sets Us Apart</h2>
@@ -481,21 +481,21 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <div className="text-center">
                   <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 h-full">
-                    <div className="text-3xl font-bold text-primary mb-2">200+</div>
+                    <div className="text-3xl font-bold text-[#1F4E79] mb-2">200+</div>
                     <div className="text-gray-700 font-semibold mb-2">Projects Delivered</div>
                     <div className="text-sm text-gray-600">Successfully completed across all verticals</div>
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 h-full">
-                    <div className="text-3xl font-bold text-primary mb-2">6</div>
+                    <div className="text-3xl font-bold text-[#1F4E79] mb-2">6</div>
                     <div className="text-gray-700 font-semibold mb-2">Industry Verticals</div>
                     <div className="text-sm text-gray-600">Specialized expertise across key sectors</div>
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 h-full">
-                    <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                    <div className="text-3xl font-bold text-[#1F4E79] mb-2">100%</div>
                     <div className="text-gray-700 font-semibold mb-2">Client Satisfaction</div>
                     <div className="text-sm text-gray-600">Commitment to excellence in every engagement</div>
                   </div>
@@ -514,7 +514,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Let's Build Something
-                <span className="block bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
+                <span className="block text-[#1F4E79] bg-clip-text text-transparent">
                   Extraordinary Together
                 </span>
               </h2>
@@ -525,7 +525,7 @@ export default function AboutPage() {
               <div className="flex justify-center">
                 <Dialog open={isEnquiryOpen} onOpenChange={setIsEnquiryOpen}>
                   <DialogTrigger asChild>
-                    <Button className="h-14 px-8 rounded-full font-bold text-base bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
+                    <Button className="h-14 px-8 rounded-full font-bold text-base text-[#1F4E79] hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
                       Submit Enquiry
                       <span className="bg-white text-primary rounded-full p-1.5 group-hover:translate-x-1 transition-transform duration-300">
                         <ArrowRight className="w-4 h-4" />

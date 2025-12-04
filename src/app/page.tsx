@@ -110,22 +110,22 @@ export default function Page() {
                 height={56}
                 className="rounded-md object-contain"
               />
-              <h1 className="text-2xl md:text-3xl font-bold leading-tight whitespace-nowrap bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+              <h1 className="text-2xl md:text-3xl font-bold leading-tight whitespace-nowrap text-[#1F4E79]">
                 PeopleSoft
               </h1>
             </Link>
 
             {/* Desktop nav */}
             <nav className="hidden sm:flex items-center gap-4 font-semibold text-gray-700">
-              <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-              <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
-              <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
+              <Link href="/" className="hover:text-[#1F4E79] transition-colors">Home</Link>
+              <Link href="/about" className="hover:text-[#1F4E79] transition-colors">About Us</Link>
+              <Link href="/contact" className="hover:text-[#1F4E79] transition-colors">Contact Us</Link>
             </nav>
 
             {/* Mobile hamburger toggle */}
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/40 sm:hidden"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:text-[#1F4E79] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#1F4E79]/40 sm:hidden"
               onClick={() => setIsMenuOpen((prev) => !prev)}
               aria-label="Toggle navigation menu"
             >
@@ -137,9 +137,9 @@ export default function Page() {
           {isMenuOpen && (
             <div className="absolute left-0 right-0 top-full z-40 bg-white border-t border-gray-200 shadow-md sm:hidden">
               <nav className="flex flex-col gap-3 px-6 py-4 text-base font-semibold text-gray-800">
-                <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">Home</Link>
-                <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">About Us</Link>
-                <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="hover:text-primary transition-colors">Contact Us</Link>
+                <Link href="/" onClick={() => setIsMenuOpen(false)} className="hover:text-[#1F4E79] transition-colors">Home</Link>
+                <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-[#1F4E79] transition-colors">About Us</Link>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="hover:text-[#1F4E79] transition-colors">Contact Us</Link>
               </nav>
             </div>
           )}
@@ -148,11 +148,11 @@ export default function Page() {
         <main className="px-8 md:px-16 lg:px-24 py-20">
           {/* Hero */}
           <div className="text-center mb-12">
-            <h2 className="text-6xl md:text-7xl font-serif text-gray-900 font-bold mb-4 leading-tight">
+            <h2 className="text-6xl md:text-7xl font-serif text-gray-900 font-medium mb-4 leading-tight">
               Consulting Today.
             </h2>
             <h2 className="text-6xl md:text-7xl font-serif mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-primary via-blue-500 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-[#1F4E79] font-medium">
                 Leading Tomorrow.
               </span>
             </h2>
@@ -161,7 +161,7 @@ export default function Page() {
           {/* Verticals + Enquiry */}
           <section className="bg-gradient-to-br from-[#f8fafc] via-[#f0f7f5] to-[#e8f5f0] rounded-3xl p-10 md:p-20 relative overflow-hidden shadow-2xl border border-gray-100">
             <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-blue-500/5" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-[#1E40AF]/5" />
               <div
                 className="absolute inset-0 opacity-10"
                 style={{ backgroundImage: `url("${basePath}/wavy-pattern.svg")` }}
@@ -169,26 +169,32 @@ export default function Page() {
             </div>
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
-                    Company over view
-                  </h2>
-                  <p className="text-base text-gray-600 leading-relaxed mb-6 text-justify hyphens-auto" lang="en">
-                    Peoplesoft Consultancy is a holding company that offers specialized consulting services across six
-                    verticals, addressing diverse industry needs. These verticals include real estate, facility
-                    management, healthcare, IT solutions, HR and CSR initiatives with a strong focus on streamlining
-                    operations and driving business excellence.
-                  </p>
-                  <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
-                    Browse our set of verticals and offerings
-                  </h2>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    We offer a variety of tools and resources designed to help improve your business
-                  </p>
+                <div className="space-y-8">
+                  <div className="space-y-4">
+                    <h2 className="text-4xl md:text-5xl font-sans font-bold text-gray-900 leading-tight tracking-tight">
+                      Company <span className="text-[#1F4E79]">Overview</span>
+                    </h2>
+                    <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-blue-500 rounded-full"></div>
+                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+                      Peoplesoft Consultancy is a holding company that offers specialized consulting services across six
+                      verticals, addressing diverse industry needs. These verticals include real estate, facility
+                      management, healthcare, IT solutions, HR and CSR initiatives with a strong focus on streamlining
+                      operations and driving business excellence.
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4 pt-8 border-t border-gray-100">
+                    <h2 className="text-3xl md:text-4xl font-sans font-bold text-gray-900 leading-tight">
+                      Our <span className="text-[#1F4E79]">Verticals</span> & Offerings
+                    </h2>
+                    <p className="text-lg text-gray-600">
+                      We offer a variety of tools and resources designed to help improve your business
+                    </p>
+                  </div>
                 </div>
                 <Dialog open={isEnquiryOpen} onOpenChange={setIsEnquiryOpen}>
                   <DialogTrigger asChild>
-                    <Button className="h-14 px-8 rounded-full font-bold text-base bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
+                    <Button className="h-14 px-8 rounded-full font-bold text-base bg-[#1F4E79] hover:bg-[#1F4E79]/90 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group" style={{ backgroundColor: '#1F4E79' }}>
                       Submit Enquiry
                       <span className="bg-white text-primary rounded-full p-1.5 group-hover:translate-x-1 transition-transform duration-300">
                         <ArrowRight className="w-4 h-4" />
@@ -277,7 +283,7 @@ export default function Page() {
                       </div>
                       <Button
                         type="submit"
-                        className="w-full h-12 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 font-bold text-base shadow-lg"
+                        className="w-full h-12 bg-gradient-to-r from-primary to-[#1E40AF] hover:from-primary/90 hover:to-[#1E40AF]/90 font-bold text-base shadow-lg"
                       >
                         Submit
                       </Button>
@@ -322,13 +328,13 @@ export default function Page() {
                     ) : (
                       <CardContent className="flex flex-col items-start justify-center p-8 gap-5 h-40 group">
                         {company.icon && (
-                          <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
+                          <div className="bg-gradient-to-br from-primary/10 to-[#1E40AF]/10 rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300">
                             {React.cloneElement(company.icon, {
                               className: 'w-8 h-8 text-primary',
                             })}
                           </div>
                         )}
-                        <p className="font-bold text-xl text-gray-900 group-hover:text-primary transition-colors duration-300">
+                        <p className="font-bold text-xl text-gray-900 group-hover:text-[#1F4E79] transition-colors duration-300">
                           {company.name}
                         </p>
                       </CardContent>
